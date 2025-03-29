@@ -1,6 +1,6 @@
 # C Playgrounds
 
-A place to learn the c programming language.
+A place to learn the C programming language.
 
 
 ## Introduction
@@ -34,7 +34,7 @@ A place to learn the c programming language.
 
 ### Phase 0: Setup (Day 1)
 
-- **Day 1: Setup & First Program**
+- ✅ **Day 1: Setup & First Program**
     *   **Topic:** Install C Compiler (GCC/Clang), verify installation (`gcc --version`). Write `hello.c`. Compile (`gcc hello.c -o hello`) and run (`./hello`). Understand `#include <stdio.h>`, `main` function, `printf`, `return 0`.
     *   **Exercise:** Modify `hello.c` to print "Hello, [Your Name]!". Recompile and run.
     *   **Tip:** Compile frequently! Catch errors early.

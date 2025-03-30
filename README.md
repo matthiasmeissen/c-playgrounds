@@ -35,17 +35,17 @@ A place to learn the C programming language.
 ### Phase 0: Setup (Day 1)
 
 - ✅ **Day 1: Setup & First Program**
-    *   **Topic:** Install C Compiler (GCC/Clang), verify installation (`gcc --version`). Write `hello.c`. Compile (`gcc hello.c -o hello`) and run (`./hello`). Understand `#include <stdio.h>`, `main` function, `printf`, `return 0`.
-    *   **Exercise:** Modify `hello.c` to print "Hello, [Your Name]!". Recompile and run.
-    *   **Tip:** Compile frequently! Catch errors early.
+    - **Topic:** Install C Compiler (GCC/Clang), verify installation (`gcc --version`). Write `hello.c`. Compile (`gcc hello.c -o hello`) and run (`./hello`). Understand `#include <stdio.h>`, `main` function, `printf`, `return 0`.
+    - **Exercise:** Modify `hello.c` to print "Hello, [Your Name]!". Recompile and run.
+    - **Tip:** Compile frequently! Catch errors early.
 
 ---
 
 ### Phase 1: The Absolute Basics (Days 2-10)
 
-*   **Day 2: `printf` and Basic Output**
-    *   **Topic:** `printf` function, format specifiers (`%d` for int, `%s` for string), newline character (`\n`).
-    *   **Exercise:** Write a program that prints your name and age on separate lines using `printf`.
+- **Day 2: `printf` and Basic Output**
+    - **Topic:** `printf` function, format specifiers (`%d` for int, `%s` for string), newline character (`\n`).
+    - **Exercise:** Write a program that prints your name and age on separate lines using `printf`.
 *   **Day 3: Variables & Basic Types (`int`, `float`)**
     *   **Topic:** Declaring variables (`int age;`), initializing (`float height = 1.8;`), integer (`int`) and floating-point (`float`) types.
     *   **Exercise:** Declare an integer variable for age and a float variable for height (in meters). Initialize and print them with descriptive text.

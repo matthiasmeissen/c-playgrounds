@@ -43,7 +43,7 @@ A place to learn the C programming language.
 
 ### Phase 1: The Absolute Basics (Days 2-10)
 
-- **Day 2: `printf` and Basic Output**
+- ✅ **Day 2: `printf` and Basic Output**
     - **Topic:** `printf` function, format specifiers (`%d` for int, `%s` for string), newline character (`\n`).
     - **Exercise:** Write a program that prints your name and age on separate lines using `printf`.
 *   **Day 3: Variables & Basic Types (`int`, `float`)**

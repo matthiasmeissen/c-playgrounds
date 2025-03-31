@@ -46,9 +46,9 @@ A place to learn the C programming language.
 - ✅ **Day 2: `printf` and Basic Output**
     - **Topic:** `printf` function, format specifiers (`%d` for int, `%s` for string), newline character (`\n`).
     - **Exercise:** Write a program that prints your name and age on separate lines using `printf`.
-*   **Day 3: Variables & Basic Types (`int`, `float`)**
-    *   **Topic:** Declaring variables (`int age;`), initializing (`float height = 1.8;`), integer (`int`) and floating-point (`float`) types.
-    *   **Exercise:** Declare an integer variable for age and a float variable for height (in meters). Initialize and print them with descriptive text.
+- ✅ **Day 3: Variables & Basic Types (`int`, `float`)**
+    - **Topic:** Declaring variables (`int age;`), initializing (`float height = 1.8;`), integer (`int`) and floating-point (`float`) types.
+    - **Exercise:** Declare an integer variable for age and a float variable for height (in meters). Initialize and print them with descriptive text.
 *   **Day 4: Basic Arithmetic Operators**
     *   **Topic:** Addition (`+`), Subtraction (`-`), Multiplication (`*`), Division (`/`). Basic operator precedence.
     *   **Exercise:** Write a program that calculates the area of a rectangle (width * height). Use `float` variables. Print the result.

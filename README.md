@@ -49,10 +49,10 @@ A place to learn the C programming language.
 - ✅ **Day 3: Variables & Basic Types (`int`, `float`)**
     - **Topic:** Declaring variables (`int age;`), initializing (`float height = 1.8;`), integer (`int`) and floating-point (`float`) types.
     - **Exercise:** Declare an integer variable for age and a float variable for height (in meters). Initialize and print them with descriptive text.
-*   **Day 4: Basic Arithmetic Operators**
-    *   **Topic:** Addition (`+`), Subtraction (`-`), Multiplication (`*`), Division (`/`). Basic operator precedence.
-    *   **Exercise:** Write a program that calculates the area of a rectangle (width * height). Use `float` variables. Print the result.
-    *   **Tip:** Integer division truncates (e.g., `5 / 2` is `2`). Use floats (`5.0 / 2.0`) for floating-point results.
+- ✅ **Day 4: Basic Arithmetic Operators**
+    - **Topic:** Addition (`+`), Subtraction (`-`), Multiplication (`*`), Division (`/`). Basic operator precedence.
+    - **Exercise:** Write a program that calculates the area of a rectangle (width * height). Use `float` variables. Print the result.
+    - **Tip:** Integer division truncates (e.g., `5 / 2` is `2`). Use floats (`5.0 / 2.0`) for floating-point results.
 *   **Day 5: Modulo Operator & `char` Type**
     *   **Topic:** Modulo (`%`) for remainder, character type (`char`). Single quotes for char literals (`'A'`).
     *   **Exercise:** Write a program that checks if a number (e.g., 10) is even or odd using the modulo operator. Declare a `char` variable, assign it a letter, and print it using `%c`.

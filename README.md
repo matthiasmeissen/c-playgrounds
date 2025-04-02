@@ -53,9 +53,9 @@ A place to learn the C programming language.
     - **Topic:** Addition (`+`), Subtraction (`-`), Multiplication (`*`), Division (`/`). Basic operator precedence.
     - **Exercise:** Write a program that calculates the area of a rectangle (width * height). Use `float` variables. Print the result.
     - **Tip:** Integer division truncates (e.g., `5 / 2` is `2`). Use floats (`5.0 / 2.0`) for floating-point results.
-*   **Day 5: Modulo Operator & `char` Type**
-    *   **Topic:** Modulo (`%`) for remainder, character type (`char`). Single quotes for char literals (`'A'`).
-    *   **Exercise:** Write a program that checks if a number (e.g., 10) is even or odd using the modulo operator. Declare a `char` variable, assign it a letter, and print it using `%c`.
+- ✅ **Day 5: Modulo Operator & `char` Type**
+    - **Topic:** Modulo (`%`) for remainder, character type (`char`). Single quotes for char literals (`'A'`).
+    - **Exercise:** Write a program that checks if a number (e.g., 10) is even or odd using the modulo operator. Declare a `char` variable, assign it a letter, and print it using `%c`.
 *   **Day 6: `sizeof` Operator**
     *   **Topic:** Using `sizeof` to determine the memory size (in bytes) of data types or variables. Understand that sizes can vary by system.
     *   **Exercise:** Print the size of `int`, `float`, `double`, and `char`.

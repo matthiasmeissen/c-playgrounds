@@ -59,9 +59,9 @@ A place to learn the C programming language.
 - ✅ **Day 6: `sizeof` Operator**
     - **Topic:** Using `sizeof` to determine the memory size (in bytes) of data types or variables. Understand that sizes can vary by system.
     - **Exercise:** Print the size of `int`, `float`, `double`, and `char`.
-*   **Day 7: `const` Keyword**
-    *   **Topic:** Defining constants using `const` for read-only variables. Improves readability and prevents accidental modification.
-    *   **Exercise:** Define a `const` integer for `SECONDS_PER_MINUTE`. Try to modify it (observe the compiler error). Use it in a `printf`.
+- ✅ **Day 7: `const` Keyword**
+    - **Topic:** Defining constants using `const` for read-only variables. Improves readability and prevents accidental modification.
+    - **Exercise:** Define a `const` integer for `SECONDS_PER_MINUTE`. Try to modify it (observe the compiler error). Use it in a `printf`.
 *   **Day 8: More `printf` Formatting**
     *   **Topic:** Format specifiers `%f` (float/double), `%.2f` (float/double with 2 decimal places), `%c` (char).
     *   **Exercise:** Declare a `double` for a price. Print it with default precision and then formatted to 2 decimal places.

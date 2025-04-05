@@ -62,9 +62,9 @@ A place to learn the C programming language.
 - ✅ **Day 7: `const` Keyword**
     - **Topic:** Defining constants using `const` for read-only variables. Improves readability and prevents accidental modification.
     - **Exercise:** Define a `const` integer for `SECONDS_PER_MINUTE`. Try to modify it (observe the compiler error). Use it in a `printf`.
-*   **Day 8: More `printf` Formatting**
-    *   **Topic:** Format specifiers `%f` (float/double), `%.2f` (float/double with 2 decimal places), `%c` (char).
-    *   **Exercise:** Declare a `double` for a price. Print it with default precision and then formatted to 2 decimal places.
+- ✅ **Day 8: More `printf` Formatting**
+    - **Topic:** Format specifiers `%f` (float/double), `%.2f` (float/double with 2 decimal places), `%c` (char).
+    - **Exercise:** Declare a `double` for a price. Print it with default precision and then formatted to 2 decimal places.
 *   **Day 9: Comments & Basic Type Casting**
     *   **Topic:** Single-line (`//`) and multi-line (`/* */`) comments. Explicit type conversion (casting), e.g., `(int)float_value;`.
     *   **Exercise:** Add comments to a previous exercise explaining the code. Declare a `float` (e.g., 9.9), explicitly cast it to an `int`, and print both values to see the truncation.

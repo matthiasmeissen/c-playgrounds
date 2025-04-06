@@ -65,9 +65,9 @@ A place to learn the C programming language.
 - ✅ **Day 8: More `printf` Formatting**
     - **Topic:** Format specifiers `%f` (float/double), `%.2f` (float/double with 2 decimal places), `%c` (char).
     - **Exercise:** Declare a `double` for a price. Print it with default precision and then formatted to 2 decimal places.
-*   **Day 9: Comments & Basic Type Casting**
-    *   **Topic:** Single-line (`//`) and multi-line (`/* */`) comments. Explicit type conversion (casting), e.g., `(int)float_value;`.
-    *   **Exercise:** Add comments to a previous exercise explaining the code. Declare a `float` (e.g., 9.9), explicitly cast it to an `int`, and print both values to see the truncation.
+- ✅ **Day 9: Comments & Basic Type Casting**
+    - **Topic:** Single-line (`//`) and multi-line (`/* */`) comments. Explicit type conversion (casting), e.g., `(int)float_value;`.
+    - **Exercise:** Add comments to a previous exercise explaining the code. Declare a `float` (e.g., 9.9), explicitly cast it to an `int`, and print both values to see the truncation.
 *   **Day 10: Problem: Fahrenheit to Celsius**
     *   **Topic:** Apply variables, arithmetic, `printf`. Formula: C = (F - 32) * 5.0/9.0. Importance of floating-point division.
     *   **Exercise:** Write a program that converts a hardcoded Fahrenheit value (e.g., 77) to Celsius and prints the result formatted to one decimal place.

@@ -68,9 +68,9 @@ A place to learn the C programming language.
 - ✅ **Day 9: Comments & Basic Type Casting**
     - **Topic:** Single-line (`//`) and multi-line (`/* */`) comments. Explicit type conversion (casting), e.g., `(int)float_value;`.
     - **Exercise:** Add comments to a previous exercise explaining the code. Declare a `float` (e.g., 9.9), explicitly cast it to an `int`, and print both values to see the truncation.
-*   **Day 10: Problem: Fahrenheit to Celsius**
-    *   **Topic:** Apply variables, arithmetic, `printf`. Formula: C = (F - 32) * 5.0/9.0. Importance of floating-point division.
-    *   **Exercise:** Write a program that converts a hardcoded Fahrenheit value (e.g., 77) to Celsius and prints the result formatted to one decimal place.
+- ✅ **Day 10: Problem: Fahrenheit to Celsius**
+    - **Topic:** Apply variables, arithmetic, `printf`. Formula: C = (F - 32) * 5.0/9.0. Importance of floating-point division.
+    - **Exercise:** Write a program that converts a hardcoded Fahrenheit value (e.g., 77) to Celsius and prints the result formatted to one decimal place.
 
 ---
 

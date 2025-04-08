@@ -76,9 +76,9 @@ A place to learn the C programming language.
 
 ### Phase 2: Control Flow & Basic Input (Days 11-21)
 
-*   **Day 11: `if` Statement & Comparison (`==`, `!=`)**
-    *   **Topic:** Conditional execution with `if`. Equality (`==`) and inequality (`!=`) operators. Code blocks `{}`.
-    *   **Exercise:** Write a program that checks if a variable `score` is equal to 100 and prints "Perfect score!" if it is.
+- ✅ **Day 11: `if` Statement & Comparison (`==`, `!=`)**
+    - **Topic:** Conditional execution with `if`. Equality (`==`) and inequality (`!=`) operators. Code blocks `{}`.
+    - **Exercise:** Write a program that checks if a variable `score` is equal to 100 and prints "Perfect score!" if it is.
 *   **Day 12: `else` and `else if`**
     *   **Topic:** Handling alternative conditions. Chaining conditions.
     *   **Exercise:** Write a program that checks if a number is positive, negative, or zero and prints the corresponding message.

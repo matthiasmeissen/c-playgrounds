@@ -12,6 +12,7 @@ int main(void) {
     checkNumber(num);
 
     // Extension 1
+    
     srand(time(NULL));
     int randomNumber = rand() - 200000;
     checkNumber(randomNumber);

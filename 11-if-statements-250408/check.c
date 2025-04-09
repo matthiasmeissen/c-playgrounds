@@ -10,6 +10,7 @@
 // To have a changing seed you can import the time.h Library
 // You can get the time with the time(NULL) function
 
+
 int main(void) {
     int score = 10;
 

@@ -82,12 +82,12 @@ A place to learn the C programming language.
 - ✅ **Day 12: `else` and `else if`**
     - **Topic:** Handling alternative conditions. Chaining conditions.
     - **Exercise:** Write a program that checks if a number is positive, negative, or zero and prints the corresponding message.
-*   **Day 13: More Comparison Operators (`<`, `>`, `<=`, `>=`)**
-    *   **Topic:** Less than, greater than, less/greater than or equal to.
-    *   **Exercise:** Write a program that checks if a temperature variable is below freezing (0 C).
-*   **Day 14: Logical Operators (`&&`, `||`)**
-    *   **Topic:** Combining conditions with AND (`&&` - both true) and OR (`||` - at least one true). Short-circuiting behavior.
-    *   **Exercise:** Check if an `age` variable is within the range 18 to 65 (inclusive) using `&&`.
+- ✅ **Day 13: More Comparison Operators (`<`, `>`, `<=`, `>=`)**
+    - **Topic:** Less than, greater than, less/greater than or equal to.
+    - **Exercise:** Write a program that checks if a temperature variable is below freezing (0 C).
+-  ✅ **Day 14: Logical Operators (`&&`, `||`)**
+    - **Topic:** Combining conditions with AND (`&&` - both true) and OR (`||` - at least one true). Short-circuiting behavior.
+    - **Exercise:** Check if an `age` variable is within the range 18 to 65 (inclusive) using `&&`.
 *   **Day 15: Logical NOT (`!`)**
     *   **Topic:** Negating a condition (`!`). Useful for boolean-like flags.
     *   **Exercise:** Use `!` to check if a boolean-like integer flag (`is_logged_in`) is *not* true (i.e., is 0).

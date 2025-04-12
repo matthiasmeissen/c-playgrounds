@@ -88,9 +88,9 @@ A place to learn the C programming language.
 -  ✅ **Day 14: Logical Operators (`&&`, `||`)**
     - **Topic:** Combining conditions with AND (`&&` - both true) and OR (`||` - at least one true). Short-circuiting behavior.
     - **Exercise:** Check if an `age` variable is within the range 18 to 65 (inclusive) using `&&`.
-*   **Day 15: Logical NOT (`!`)**
-    *   **Topic:** Negating a condition (`!`). Useful for boolean-like flags.
-    *   **Exercise:** Use `!` to check if a boolean-like integer flag (`is_logged_in`) is *not* true (i.e., is 0).
+-  ✅ **Day 15: Logical NOT (`!`)**
+    - **Topic:** Negating a condition (`!`). Useful for boolean-like flags.
+    - **Exercise:** Use `!` to check if a boolean-like integer flag (`is_logged_in`) is *not* true (i.e., is 0).
 *   **Day 16: `while` Loop**
     *   **Topic:** Looping while a condition remains true. Pre-test loop. Need to manage loop variable inside the loop.
     *   **Exercise:** Print numbers from 10 down to 1 using a `while` loop.

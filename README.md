@@ -91,9 +91,9 @@ A place to learn the C programming language.
 -  ✅ **Day 15: Logical NOT (`!`)**
     - **Topic:** Negating a condition (`!`). Useful for boolean-like flags.
     - **Exercise:** Use `!` to check if a boolean-like integer flag (`is_logged_in`) is *not* true (i.e., is 0).
-*   **Day 16: `while` Loop**
-    *   **Topic:** Looping while a condition remains true. Pre-test loop. Need to manage loop variable inside the loop.
-    *   **Exercise:** Print numbers from 10 down to 1 using a `while` loop.
+- ✅ **Day 16: `while` Loop**
+    - **Topic:** Looping while a condition remains true. Pre-test loop. Need to manage loop variable inside the loop.
+    - **Exercise:** Print numbers from 10 down to 1 using a `while` loop.
 *   **Day 17: `for` Loop**
     *   **Topic:** Concise loop structure (initialization; condition; post-iteration step). Ideal for counter-controlled loops.
     *   **Exercise:** Print the first 10 even numbers (0, 2, ..., 18) using a `for` loop.

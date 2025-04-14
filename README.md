@@ -94,9 +94,9 @@ A place to learn the C programming language.
 - ✅ **Day 16: `while` Loop**
     - **Topic:** Looping while a condition remains true. Pre-test loop. Need to manage loop variable inside the loop.
     - **Exercise:** Print numbers from 10 down to 1 using a `while` loop.
-*   **Day 17: `for` Loop**
-    *   **Topic:** Concise loop structure (initialization; condition; post-iteration step). Ideal for counter-controlled loops.
-    *   **Exercise:** Print the first 10 even numbers (0, 2, ..., 18) using a `for` loop.
+- ✅ **Day 17: `for` Loop**
+    - **Topic:** Concise loop structure (initialization; condition; post-iteration step). Ideal for counter-controlled loops.
+    - **Exercise:** Print the first 10 even numbers (0, 2, ..., 18) using a `for` loop.
 *   **Day 18: `do...while` Loop**
     *   **Topic:** Loop that executes the body at least once, then checks the condition. Post-test loop.
     *   **Exercise:** Create a simple menu prompt that asks the user for input and repeats *until* they enter 'q', using `do...while`. (Input handling will be basic for now).

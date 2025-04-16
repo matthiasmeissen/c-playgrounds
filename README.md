@@ -100,9 +100,9 @@ A place to learn the C programming language.
 - ✅ **Day 18: `do...while` Loop**
     - **Topic:** Loop that executes the body at least once, then checks the condition. Post-test loop.
     - **Exercise:** Create a simple menu prompt that asks the user for input and repeats *until* they enter 'q', using `do...while`. (Input handling will be basic for now).
-*   **Day 19: `break` Statement**
-    *   **Topic:** Exiting a loop (`for`, `while`, `do...while`) or `switch` statement prematurely.
-    *   **Exercise:** Loop indefinitely (`while(1)`), prompt the user for a number, and `break` the loop if they enter 0.
+- ✅ **Day 19: `break` Statement**
+    - **Topic:** Exiting a loop (`for`, `while`, `do...while`) or `switch` statement prematurely.
+    - **Exercise:** Loop indefinitely (`while(1)`), prompt the user for a number, and `break` the loop if they enter 0.
 *   **Day 20: `continue` Statement**
     *   **Topic:** Skipping the rest of the current loop iteration and proceeding to the next condition check/iteration step.
     *   **Exercise:** Loop from 1 to 10, but use `continue` to skip printing any multiples of 3.

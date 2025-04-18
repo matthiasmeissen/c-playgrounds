@@ -106,10 +106,10 @@ A place to learn the C programming language.
 - ✅ **Day 20: `continue` Statement**
     - **Topic:** Skipping the rest of the current loop iteration and proceeding to the next condition check/iteration step.
     - **Exercise:** Loop from 1 to 10, but use `continue` to skip printing any multiples of 3.
-*   **Day 21: Basic Input with `scanf`**
-    *   **Topic:** Reading formatted input (`%d`, `%f`, `%c`). Pass address using `&`. **CRITICAL:** `scanf` is unsafe and prone to buffer overflows (especially with strings) and input errors.
-    *   **Exercise:** Ask the user to enter their age (`int`) and favorite letter (`char`). Read them using `scanf`. Print them back.
-    *   **Tip:** **Always check `scanf`'s return value!** It returns the number of items successfully assigned. If it's not what you expect, the input failed. This is crucial error handling. We'll learn safer input methods later (`fgets`).
+- ✅ **Day 21: Basic Input with `scanf`**
+    - **Topic:** Reading formatted input (`%d`, `%f`, `%c`). Pass address using `&`. **CRITICAL:** `scanf` is unsafe and prone to buffer overflows (especially with strings) and input errors.
+    - **Exercise:** Ask the user to enter their age (`int`) and favorite letter (`char`). Read them using `scanf`. Print them back.
+    - **Tip:** **Always check `scanf`'s return value!** It returns the number of items successfully assigned. If it's not what you expect, the input failed. This is crucial error handling. We'll learn safer input methods later (`fgets`).
 
 ---
 

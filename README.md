@@ -115,9 +115,9 @@ A place to learn the C programming language.
 
 ### Phase 3: Functions & Scope (Days 22-30)
 
-*   **Day 22: Defining Simple Functions (`void`, no parameters)**
-    *   **Topic:** Creating reusable blocks of code. Function definition syntax. Function calls. `void` indicates no return value.
-    *   **Exercise:** Create a function `display_banner()` that prints a decorative text banner (e.g., `********`). Call it from `main`.
+- ✅ **Day 22: Defining Simple Functions (`void`, no parameters)**
+    - **Topic:** Creating reusable blocks of code. Function definition syntax. Function calls. `void` indicates no return value.
+    - **Exercise:** Create a function `display_banner()` that prints a decorative text banner (e.g., `********`). Call it from `main`.
 *   **Day 23: Functions with Parameters (Pass by Value)**
     *   **Topic:** Passing data *into* functions. Function parameters act as local copies of the arguments passed in. Changes inside the function don't affect original arguments.
     *   **Exercise:** Create a function `print_square(int num)` that takes an integer and prints its square. Call it from `main` with a value.

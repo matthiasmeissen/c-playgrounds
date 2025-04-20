@@ -118,9 +118,9 @@ A place to learn the C programming language.
 - ✅ **Day 22: Defining Simple Functions (`void`, no parameters)**
     - **Topic:** Creating reusable blocks of code. Function definition syntax. Function calls. `void` indicates no return value.
     - **Exercise:** Create a function `display_banner()` that prints a decorative text banner (e.g., `********`). Call it from `main`.
-*   **Day 23: Functions with Parameters (Pass by Value)**
-    *   **Topic:** Passing data *into* functions. Function parameters act as local copies of the arguments passed in. Changes inside the function don't affect original arguments.
-    *   **Exercise:** Create a function `print_square(int num)` that takes an integer and prints its square. Call it from `main` with a value.
+- ✅ **Day 23: Functions with Parameters (Pass by Value)**
+    - **Topic:** Passing data *into* functions. Function parameters act as local copies of the arguments passed in. Changes inside the function don't affect original arguments.
+    - **Exercise:** Create a function `print_square(int num)` that takes an integer and prints its square. Call it from `main` with a value.
 *   **Day 24: Functions with Return Values**
     *   **Topic:** Functions that compute and return a result (`return` keyword). The return type must match the function definition.
     *   **Exercise:** Create a function `int multiply(int a, int b)` that returns the product of two integers. Call it from `main`, store the result in a variable, and print it.

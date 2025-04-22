@@ -124,9 +124,9 @@ A place to learn the C programming language.
 - ✅ **Day 24: Functions with Return Values**
     - **Topic:** Functions that compute and return a result (`return` keyword). The return type must match the function definition.
     - **Exercise:** Create a function `int multiply(int a, int b)` that returns the product of two integers. Call it from `main`, store the result in a variable, and print it.
-*   **Day 25: Function Prototypes (Declarations)**
-    *   **Topic:** Declaring a function's signature (return type, name, parameter types) before its definition. Allows defining functions after `main` or in different files.
-    *   **Exercise:** Declare the `multiply` function prototype above `main`, define `multiply` *below* `main`, and call it from `main`.
+- ✅ **Day 25: Function Prototypes (Declarations)**
+    - **Topic:** Declaring a function's signature (return type, name, parameter types) before its definition. Allows defining functions after `main` or in different files.
+    - **Exercise:** Declare the `multiply` function prototype above `main`, define `multiply` *below* `main`, and call it from `main`.
 *   **Day 26: Variable Scope (Local vs. Global)**
     *   **Topic:** Where variables are accessible. Local variables exist only within their block (`{}`). Global variables exist everywhere (generally avoid these!). Shadowing (local hides global).
     *   **Exercise:** Declare a variable inside `main`. Declare another variable with the same name inside an `if` block within `main`. Observe their independence. Avoid globals unless absolutely necessary.

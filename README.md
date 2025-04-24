@@ -130,9 +130,9 @@ A place to learn the C programming language.
 - ✅ **Day 26: Variable Scope (Local vs. Global)**
     - **Topic:** Where variables are accessible. Local variables exist only within their block (`{}`). Global variables exist everywhere (generally avoid these!). Shadowing (local hides global).
     - **Exercise:** Declare a variable inside `main`. Declare another variable with the same name inside an `if` block within `main`. Observe their independence. Avoid globals unless absolutely necessary.
-*   **Day 27: `void` Return Type & `const` Parameters**
-    *   **Topic:** Recap `void` functions. Using `const` for input parameters that the function promises not to modify. Improves safety and documents intent.
-    *   **Exercise:** Create a function `void print_details(const int id, const float balance)` that prints the values. Using `const` shows these are inputs only.
+- ✅ **Day 27: `void` Return Type & `const` Parameters**
+    - **Topic:** Recap `void` functions. Using `const` for input parameters that the function promises not to modify. Improves safety and documents intent.
+    - **Exercise:** Create a function `void print_details(const int id, const float balance)` that prints the values. Using `const` shows these are inputs only.
 *   **Day 28: Refactoring: Fahrenheit Converter Function**
     *   **Topic:** Applying functions to improve existing code's structure and reusability.
     *   **Exercise:** Take the Fahrenheit-to-Celsius code from Day 10 and put the conversion logic into a function `float fahrenheit_to_celsius(float fahr)`. `main` should now call this function.

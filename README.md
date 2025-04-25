@@ -133,9 +133,9 @@ A place to learn the C programming language.
 - ✅ **Day 27: `void` Return Type & `const` Parameters**
     - **Topic:** Recap `void` functions. Using `const` for input parameters that the function promises not to modify. Improves safety and documents intent.
     - **Exercise:** Create a function `void print_details(const int id, const float balance)` that prints the values. Using `const` shows these are inputs only.
-*   **Day 28: Refactoring: Fahrenheit Converter Function**
-    *   **Topic:** Applying functions to improve existing code's structure and reusability.
-    *   **Exercise:** Take the Fahrenheit-to-Celsius code from Day 10 and put the conversion logic into a function `float fahrenheit_to_celsius(float fahr)`. `main` should now call this function.
+- ✅ **Day 28: Refactoring: Fahrenheit Converter Function**
+    - **Topic:** Applying functions to improve existing code's structure and reusability.
+    - **Exercise:** Take the Fahrenheit-to-Celsius code from Day 10 and put the conversion logic into a function `float fahrenheit_to_celsius(float fahr)`. `main` should now call this function.
 *   **Day 29: Refactoring: Simple Calculator Functions**
     *   **Topic:** Breaking down a problem (like a calculator) into smaller, manageable function units.
     *   **Exercise:** Create functions for add, subtract, multiply, divide. `main` should call these based on some logic (e.g., hardcoded operation).

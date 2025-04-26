@@ -136,9 +136,9 @@ A place to learn the C programming language.
 - ✅ **Day 28: Refactoring: Fahrenheit Converter Function**
     - **Topic:** Applying functions to improve existing code's structure and reusability.
     - **Exercise:** Take the Fahrenheit-to-Celsius code from Day 10 and put the conversion logic into a function `float fahrenheit_to_celsius(float fahr)`. `main` should now call this function.
-*   **Day 29: Refactoring: Simple Calculator Functions**
-    *   **Topic:** Breaking down a problem (like a calculator) into smaller, manageable function units.
-    *   **Exercise:** Create functions for add, subtract, multiply, divide. `main` should call these based on some logic (e.g., hardcoded operation).
+- ✅ **Day 29: Refactoring: Simple Calculator Functions**
+    - **Topic:** Breaking down a problem (like a calculator) into smaller, manageable function units.
+    - **Exercise:** Create functions for add, subtract, multiply, divide. `main` should call these based on some logic (e.g., hardcoded operation).
 *   **Day 30: Introduction to `printf`-Debugging**
     *   **Topic:** Using strategically placed `printf` statements to trace execution flow and inspect variable values at different points in the code. A simple but effective debugging technique.
     *   **Exercise:** Add `printf` statements inside your calculator functions (e.g., `printf("Entering add: a=%d, b=%d\n", a, b);`) to observe the flow and parameters when called from `main`.

@@ -147,9 +147,9 @@ A place to learn the C programming language.
 
 ### Phase 4: Pointers and Memory (Days 31-55) - **Take Your Time Here!**
 
-*   **Day 31: Memory Addresses & Address-of Operator (`&`)**
-    *   **Topic:** Conceptual understanding of memory as a sequence of bytes, each with an address. Using `&` to get the memory address of a variable. Format specifier `%p` for printing addresses (pointers).
-    *   **Exercise:** Declare an `int` variable, print its value and its memory address using `&` and `%p`.
+- ✅ **Day 31: Memory Addresses & Address-of Operator (`&`)**
+    - **Topic:** Conceptual understanding of memory as a sequence of bytes, each with an address. Using `&` to get the memory address of a variable. Format specifier `%p` for printing addresses (pointers).
+    - **Exercise:** Declare an `int` variable, print its value and its memory address using `&` and `%p`.
 *   **Day 32: Pointer Variables (`*`) - Declaration & NULL**
     *   **Topic:** Declaring pointer variables (e.g., `int *ptr;` - `ptr` holds an address of an `int`). Initializing pointers to `NULL` (a special value indicating "points to nothing"). Include `<stddef.h>` for `NULL` or just use `0`.
     *   **Exercise:** Declare an integer pointer `ptr`, initialize it to `NULL`, and print its value (`%p`).

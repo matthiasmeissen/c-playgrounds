@@ -150,10 +150,10 @@ A place to learn the C programming language.
 - ✅ **Day 31: Memory Addresses & Address-of Operator (`&`)**
     - **Topic:** Conceptual understanding of memory as a sequence of bytes, each with an address. Using `&` to get the memory address of a variable. Format specifier `%p` for printing addresses (pointers).
     - **Exercise:** Declare an `int` variable, print its value and its memory address using `&` and `%p`.
-*   **Day 32: Pointer Variables (`*`) - Declaration & NULL**
-    *   **Topic:** Declaring pointer variables (e.g., `int *ptr;` - `ptr` holds an address of an `int`). Initializing pointers to `NULL` (a special value indicating "points to nothing"). Include `<stddef.h>` for `NULL` or just use `0`.
-    *   **Exercise:** Declare an integer pointer `ptr`, initialize it to `NULL`, and print its value (`%p`).
-    *   **Tip:** Always initialize pointers (to `NULL` or a valid address) to avoid using uninitialized pointers.
+- ✅ **Day 32: Pointer Variables (`*`) - Declaration & NULL**
+    - **Topic:** Declaring pointer variables (e.g., `int *ptr;` - `ptr` holds an address of an `int`). Initializing pointers to `NULL` (a special value indicating "points to nothing"). Include `<stddef.h>` for `NULL` or just use `0`.
+    - **Exercise:** Declare an integer pointer `ptr`, initialize it to `NULL`, and print its value (`%p`).
+    - **Tip:** Always initialize pointers (to `NULL` or a valid address) to avoid using uninitialized pointers.
 *   **Day 33: Assigning Addresses to Pointers**
     *   **Topic:** Making a pointer variable store the address of another variable (`ptr = &var;`). The pointer `ptr` now "points to" `var`.
     *   **Exercise:** Declare `int x = 10;` and `int *ptr = &x;`. Print the address stored *in* `ptr` (`%p`, value is `ptr`) and the value *of* `x` (`%d`, value is `x`).

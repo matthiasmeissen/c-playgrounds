@@ -154,9 +154,9 @@ A place to learn the C programming language.
     - **Topic:** Declaring pointer variables (e.g., `int *ptr;` - `ptr` holds an address of an `int`). Initializing pointers to `NULL` (a special value indicating "points to nothing"). Include `<stddef.h>` for `NULL` or just use `0`.
     - **Exercise:** Declare an integer pointer `ptr`, initialize it to `NULL`, and print its value (`%p`).
     - **Tip:** Always initialize pointers (to `NULL` or a valid address) to avoid using uninitialized pointers.
-*   **Day 33: Assigning Addresses to Pointers**
-    *   **Topic:** Making a pointer variable store the address of another variable (`ptr = &var;`). The pointer `ptr` now "points to" `var`.
-    *   **Exercise:** Declare `int x = 10;` and `int *ptr = &x;`. Print the address stored *in* `ptr` (`%p`, value is `ptr`) and the value *of* `x` (`%d`, value is `x`).
+- ✅ **Day 33: Assigning Addresses to Pointers**
+    - **Topic:** Making a pointer variable store the address of another variable (`ptr = &var;`). The pointer `ptr` now "points to" `var`.
+    - **Exercise:** Declare `int x = 10;` and `int *ptr = &x;`. Print the address stored *in* `ptr` (`%p`, value is `ptr`) and the value *of* `x` (`%d`, value is `x`).
 *   **Day 34: Dereferencing Operator (`*`)**
     *   **Topic:** Accessing the value *at* the address stored in a pointer (`value = *ptr;`). Reading or writing *through* the pointer.
     *   **Exercise:** Using `ptr` from Day 33, print the value `*ptr` (`%d`). Modify `x` directly (`x = 20;`) and print `*ptr` again. Then, modify `x` *via* the pointer (`*ptr = 30;`) and print the value of `x`.

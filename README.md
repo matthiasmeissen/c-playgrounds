@@ -157,9 +157,9 @@ A place to learn the C programming language.
 - ✅ **Day 33: Assigning Addresses to Pointers**
     - **Topic:** Making a pointer variable store the address of another variable (`ptr = &var;`). The pointer `ptr` now "points to" `var`.
     - **Exercise:** Declare `int x = 10;` and `int *ptr = &x;`. Print the address stored *in* `ptr` (`%p`, value is `ptr`) and the value *of* `x` (`%d`, value is `x`).
-*   **Day 34: Dereferencing Operator (`*`)**
-    *   **Topic:** Accessing the value *at* the address stored in a pointer (`value = *ptr;`). Reading or writing *through* the pointer.
-    *   **Exercise:** Using `ptr` from Day 33, print the value `*ptr` (`%d`). Modify `x` directly (`x = 20;`) and print `*ptr` again. Then, modify `x` *via* the pointer (`*ptr = 30;`) and print the value of `x`.
+- ✅ **Day 34: Dereferencing Operator (`*`)**
+    - **Topic:** Accessing the value *at* the address stored in a pointer (`value = *ptr;`). Reading or writing *through* the pointer.
+    - **Exercise:** Using `ptr` from Day 33, print the value `*ptr` (`%d`). Modify `x` directly (`x = 20;`) and print `*ptr` again. Then, modify `x` *via* the pointer (`*ptr = 30;`) and print the value of `x`.
 *   **Day 35: Pointers and Functions (Pass-by-Reference Simulation)**
     *   **Topic:** Passing pointers (addresses) to functions allows the function to modify the original variables in the caller's scope.
     *   **Exercise:** Write a function `void add_one(int *num_ptr)` that increments the integer pointed to by `num_ptr`. Call it from `main` passing the address of an integer variable (`&my_var`). Print `my_var` before and after the call.

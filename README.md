@@ -160,9 +160,9 @@ A place to learn the C programming language.
 - ✅ **Day 34: Dereferencing Operator (`*`)**
     - **Topic:** Accessing the value *at* the address stored in a pointer (`value = *ptr;`). Reading or writing *through* the pointer.
     - **Exercise:** Using `ptr` from Day 33, print the value `*ptr` (`%d`). Modify `x` directly (`x = 20;`) and print `*ptr` again. Then, modify `x` *via* the pointer (`*ptr = 30;`) and print the value of `x`.
-*   **Day 35: Pointers and Functions (Pass-by-Reference Simulation)**
-    *   **Topic:** Passing pointers (addresses) to functions allows the function to modify the original variables in the caller's scope.
-    *   **Exercise:** Write a function `void add_one(int *num_ptr)` that increments the integer pointed to by `num_ptr`. Call it from `main` passing the address of an integer variable (`&my_var`). Print `my_var` before and after the call.
+- ✅ **Day 35: Pointers and Functions (Pass-by-Reference Simulation)**
+    - **Topic:** Passing pointers (addresses) to functions allows the function to modify the original variables in the caller's scope.
+    - **Exercise:** Write a function `void add_one(int *num_ptr)` that increments the integer pointed to by `num_ptr`. Call it from `main` passing the address of an integer variable (`&my_var`). Print `my_var` before and after the call.
 *   **Day 36: `const` Correctness with Pointers**
     *   **Topic:** `const int *p` (pointer to constant int - cannot change value via `p`), `int * const p` (constant pointer to int - cannot change address `p` holds), `const int * const p` (constant pointer to constant int).
     *   **Exercise:** Declare `int y = 5;`. Declare `const int *p1 = &y;` - try `*p1 = 6;` (error). Declare `int * const p2 = &y;` - try `p2 = NULL;` (error).

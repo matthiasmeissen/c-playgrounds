@@ -169,9 +169,9 @@ A place to learn the C programming language.
 - ✅ **Day 37: Pointers and Arrays (Decay)**
     - **Topic:** An array name used in an expression usually "decays" into a pointer to its first element. `arr` is often equivalent to `&arr[0]`.
     - **Exercise:** Declare `int nums[3] = {10, 20, 30};`. Print the values of `nums`, `&nums[0]`. Assign `int *p = nums;`. Print `p`. Observe they represent the same address.
-*   **Day 38: Array Access via Pointers (Bracket Notation)**
-    *   **Topic:** Because of decay, `p[i]` works even if `p` is a pointer assigned from an array. `p[i]` is equivalent to `*(p + i)`.
-    *   **Exercise:** Using the pointer `p` from Day 37 (`p = nums`), access and print `p[1]`.
+- ✅ **Day 38: Array Access via Pointers (Bracket Notation)**
+    - **Topic:** Because of decay, `p[i]` works even if `p` is a pointer assigned from an array. `p[i]` is equivalent to `*(p + i)`.
+    - **Exercise:** Using the pointer `p` from Day 37 (`p = nums`), access and print `p[1]`.
 *   **Day 39: Pointer Arithmetic (Increment/Decrement)**
     *   **Topic:** `p++` increments the pointer to point to the *next element* in memory (adjusts address by `sizeof(*p)` bytes). `p--` decrements.
     *   **Exercise:** Use a pointer `p` initialized to `nums`. Use a `for` loop (3 iterations) to print `*p` and then execute `p++` inside the loop. Observe it prints 10, 20, 30.

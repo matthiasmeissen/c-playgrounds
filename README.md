@@ -172,9 +172,9 @@ A place to learn the C programming language.
 - ✅ **Day 38: Array Access via Pointers (Bracket Notation)**
     - **Topic:** Because of decay, `p[i]` works even if `p` is a pointer assigned from an array. `p[i]` is equivalent to `*(p + i)`.
     - **Exercise:** Using the pointer `p` from Day 37 (`p = nums`), access and print `p[1]`.
-*   **Day 39: Pointer Arithmetic (Increment/Decrement)**
-    *   **Topic:** `p++` increments the pointer to point to the *next element* in memory (adjusts address by `sizeof(*p)` bytes). `p--` decrements.
-    *   **Exercise:** Use a pointer `p` initialized to `nums`. Use a `for` loop (3 iterations) to print `*p` and then execute `p++` inside the loop. Observe it prints 10, 20, 30.
+- ✅ **Day 39: Pointer Arithmetic (Increment/Decrement)**
+    - **Topic:** `p++` increments the pointer to point to the *next element* in memory (adjusts address by `sizeof(*p)` bytes). `p--` decrements.
+    - **Exercise:** Use a pointer `p` initialized to `nums`. Use a `for` loop (3 iterations) to print `*p` and then execute `p++` inside the loop. Observe it prints 10, 20, 30.
 *   **Day 40: Array Access via Pointers (Pointer Arithmetic Notation)**
     *   **Topic:** Explicitly using pointer arithmetic for access: `*(p + i)` retrieves the value at the i-th element relative to `p`.
     *   **Exercise:** Loop through the `nums` array using an index `i`. Inside the loop, print the element using the `*(nums + i)` notation.

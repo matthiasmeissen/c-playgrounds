@@ -175,9 +175,9 @@ A place to learn the C programming language.
 - ✅ **Day 39: Pointer Arithmetic (Increment/Decrement)**
     - **Topic:** `p++` increments the pointer to point to the *next element* in memory (adjusts address by `sizeof(*p)` bytes). `p--` decrements.
     - **Exercise:** Use a pointer `p` initialized to `nums`. Use a `for` loop (3 iterations) to print `*p` and then execute `p++` inside the loop. Observe it prints 10, 20, 30.
-*   **Day 40: Array Access via Pointers (Pointer Arithmetic Notation)**
-    *   **Topic:** Explicitly using pointer arithmetic for access: `*(p + i)` retrieves the value at the i-th element relative to `p`.
-    *   **Exercise:** Loop through the `nums` array using an index `i`. Inside the loop, print the element using the `*(nums + i)` notation.
+- ✅ **Day 40: Array Access via Pointers (Pointer Arithmetic Notation)**
+    - **Topic:** Explicitly using pointer arithmetic for access: `*(p + i)` retrieves the value at the i-th element relative to `p`.
+    - **Exercise:** Loop through the `nums` array using an index `i`. Inside the loop, print the element using the `*(nums + i)` notation.
 *   **Day 41: Pointer Arithmetic Size Dependency**
     *   **Topic:** How `p + 1` calculates the next address depends *critically* on the type `p` points to (`sizeof(*p)`).
     *   **Exercise:** Declare `int i_arr[2]; char c_arr[2];`. Print `(void*)i_arr`, `(void*)(i_arr + 1)`. Print `(void*)c_arr`, `(void*)(c_arr + 1)`. Observe the difference in address values (likely 4 bytes for int, 1 byte for char). Use `(void*)` cast for `%p`.

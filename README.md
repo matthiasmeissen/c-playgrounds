@@ -181,9 +181,9 @@ A place to learn the C programming language.
 - ✅ **Day 41: Pointer Arithmetic Size Dependency**
     - **Topic:** How `p + 1` calculates the next address depends *critically* on the type `p` points to (`sizeof(*p)`).
     - **Exercise:** Declare `int i_arr[2]; char c_arr[2];`. Print `(void*)i_arr`, `(void*)(i_arr + 1)`. Print `(void*)c_arr`, `(void*)(c_arr + 1)`. Observe the difference in address values (likely 4 bytes for int, 1 byte for char). Use `(void*)` cast for `%p`.
-*   **Day 42: Heap vs. Stack Memory (Conceptual)**
-    *   **Topic:** Understand the two main memory regions: Stack (automatic, function-local variables, fast allocation/deallocation, limited size) and Heap (manual, dynamic allocation, larger size, slower allocation/deallocation, requires explicit management).
-    *   **Exercise:** Draw diagrams illustrating how local variables are added/removed from the stack during function calls and how `malloc` allocates on the heap. No code.
+- ✅ **Day 42: Heap vs. Stack Memory (Conceptual)**
+    - **Topic:** Understand the two main memory regions: Stack (automatic, function-local variables, fast allocation/deallocation, limited size) and Heap (manual, dynamic allocation, larger size, slower allocation/deallocation, requires explicit management).
+    - **Exercise:** Draw diagrams illustrating how local variables are added/removed from the stack during function calls and how `malloc` allocates on the heap. No code.
 *   **Day 43: Dynamic Memory Allocation: `malloc`**
     *   **Topic:** Allocating memory on the heap using `malloc(size_t size)`. Requires `<stdlib.h>`. Returns a `void*` pointer to the allocated block, or `NULL` on failure. Size is in bytes.
     *   **Exercise:** Allocate memory for a single `int` using `int *ptr = malloc(sizeof(int));`.

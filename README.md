@@ -184,10 +184,10 @@ A place to learn the C programming language.
 - ✅ **Day 42: Heap vs. Stack Memory (Conceptual)**
     - **Topic:** Understand the two main memory regions: Stack (automatic, function-local variables, fast allocation/deallocation, limited size) and Heap (manual, dynamic allocation, larger size, slower allocation/deallocation, requires explicit management).
     - **Exercise:** Draw diagrams illustrating how local variables are added/removed from the stack during function calls and how `malloc` allocates on the heap. No code.
-*   **Day 43: Dynamic Memory Allocation: `malloc`**
-    *   **Topic:** Allocating memory on the heap using `malloc(size_t size)`. Requires `<stdlib.h>`. Returns a `void*` pointer to the allocated block, or `NULL` on failure. Size is in bytes.
-    *   **Exercise:** Allocate memory for a single `int` using `int *ptr = malloc(sizeof(int));`.
-    *   **Tip:** **CRITICAL: Always check if `malloc` returned `NULL`!** If it's `NULL`, allocation failed, and dereferencing it crashes the program.
+-  ✅ **Day 43: Dynamic Memory Allocation: `malloc`**
+    - **Topic:** Allocating memory on the heap using `malloc(size_t size)`. Requires `<stdlib.h>`. Returns a `void*` pointer to the allocated block, or `NULL` on failure. Size is in bytes.
+    - **Exercise:** Allocate memory for a single `int` using `int *ptr = malloc(sizeof(int));`.
+    - **Tip:** **CRITICAL: Always check if `malloc` returned `NULL`!** If it's `NULL`, allocation failed, and dereferencing it crashes the program.
 *   **Day 44: Using Allocated Memory & `free`**
     *   **Topic:** Accessing memory allocated with `malloc` using the pointer (after casting if needed, though `malloc` result often assigned to typed pointer). **CRITICAL:** Releasing heap memory with `free(ptr)` when done to prevent memory leaks.
     *   **Exercise:** Continue Day 43: Check if `ptr` is not `NULL`. If successful, assign a value (`*ptr = 50;`), print the value (`printf("%d\n", *ptr);`). Then call `free(ptr);`.

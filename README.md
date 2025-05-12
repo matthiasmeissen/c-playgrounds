@@ -191,9 +191,9 @@ A place to learn the C programming language.
 - ✅ **Day 44: Using Allocated Memory & `free`**
     - **Topic:** Accessing memory allocated with `malloc` using the pointer (after casting if needed, though `malloc` result often assigned to typed pointer). **CRITICAL:** Releasing heap memory with `free(ptr)` when done to prevent memory leaks.
     - **Exercise:** Continue Day 43: Check if `ptr` is not `NULL`. If successful, assign a value (`*ptr = 50;`), print the value (`printf("%d\n", *ptr);`). Then call `free(ptr);`.
-*   **Day 45: Memory Leaks**
-    *   **Topic:** What happens when heap memory is allocated (`malloc`) but never released (`free`). The program loses the pointer and can no longer manage that memory, wasting resources.
-    *   **Exercise:** (Conceptual or careful execution) Write a loop that calls `malloc` inside but *never* calls `free`. Run it briefly and observe memory usage climbing (using system monitor). Understand why this is bad. Stop the program quickly!
+- ✅ **Day 45: Memory Leaks**
+    - **Topic:** What happens when heap memory is allocated (`malloc`) but never released (`free`). The program loses the pointer and can no longer manage that memory, wasting resources.
+    - **Exercise:** (Conceptual or careful execution) Write a loop that calls `malloc` inside but *never* calls `free`. Run it briefly and observe memory usage climbing (using system monitor). Understand why this is bad. Stop the program quickly!
 *   **Day 46: Dynamic Array Allocation**
     *   **Topic:** Using `malloc` to allocate space for multiple contiguous elements (an array). Formula: `malloc(count * sizeof(element_type))`.
     *   **Exercise:** Allocate memory for an array of 5 doubles: `double *arr = malloc(5 * sizeof(double));`. Check for `NULL`.

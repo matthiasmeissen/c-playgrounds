@@ -194,9 +194,9 @@ A place to learn the C programming language.
 - ✅ **Day 45: Memory Leaks**
     - **Topic:** What happens when heap memory is allocated (`malloc`) but never released (`free`). The program loses the pointer and can no longer manage that memory, wasting resources.
     - **Exercise:** (Conceptual or careful execution) Write a loop that calls `malloc` inside but *never* calls `free`. Run it briefly and observe memory usage climbing (using system monitor). Understand why this is bad. Stop the program quickly!
-*   **Day 46: Dynamic Array Allocation**
-    *   **Topic:** Using `malloc` to allocate space for multiple contiguous elements (an array). Formula: `malloc(count * sizeof(element_type))`.
-    *   **Exercise:** Allocate memory for an array of 5 doubles: `double *arr = malloc(5 * sizeof(double));`. Check for `NULL`.
+- ✅ **Day 46: Dynamic Array Allocation**
+    - **Topic:** Using `malloc` to allocate space for multiple contiguous elements (an array). Formula: `malloc(count * sizeof(element_type))`.
+    - **Exercise:** Allocate memory for an array of 5 doubles: `double *arr = malloc(5 * sizeof(double));`. Check for `NULL`.
 *   **Day 47: Using Dynamic Arrays & `free`**
     *   **Topic:** Accessing elements of a dynamically allocated array using pointer arithmetic or bracket notation (`arr[i]`). Freeing the entire block with a single `free(arr)` call (using the original pointer returned by `malloc`).
     *   **Exercise:** Continue Day 46: If allocation succeeded, use a loop to fill the array with values (e.g., 0.0, 1.1, 2.2, ...). Print the values using another loop. Then `free(arr)`.

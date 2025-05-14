@@ -197,9 +197,9 @@ A place to learn the C programming language.
 - ✅ **Day 46: Dynamic Array Allocation**
     - **Topic:** Using `malloc` to allocate space for multiple contiguous elements (an array). Formula: `malloc(count * sizeof(element_type))`.
     - **Exercise:** Allocate memory for an array of 5 doubles: `double *arr = malloc(5 * sizeof(double));`. Check for `NULL`.
-*   **Day 47: Using Dynamic Arrays & `free`**
-    *   **Topic:** Accessing elements of a dynamically allocated array using pointer arithmetic or bracket notation (`arr[i]`). Freeing the entire block with a single `free(arr)` call (using the original pointer returned by `malloc`).
-    *   **Exercise:** Continue Day 46: If allocation succeeded, use a loop to fill the array with values (e.g., 0.0, 1.1, 2.2, ...). Print the values using another loop. Then `free(arr)`.
+- ✅ **Day 47: Using Dynamic Arrays & `free`**
+    - **Topic:** Accessing elements of a dynamically allocated array using pointer arithmetic or bracket notation (`arr[i]`). Freeing the entire block with a single `free(arr)` call (using the original pointer returned by `malloc`).
+    - **Exercise:** Continue Day 46: If allocation succeeded, use a loop to fill the array with values (e.g., 0.0, 1.1, 2.2, ...). Print the values using another loop. Then `free(arr)`.
 *   **Day 48: `calloc` Function**
     *   **Topic:** `calloc(count, size_t size)` allocates memory for `count` elements of `size` bytes each *and* initializes the allocated memory to all bits zero. Returns `void*` or `NULL`.
     *   **Exercise:** Allocate an array of 5 integers using `int *arr = calloc(5, sizeof(int));`. Check for `NULL`. Print the elements (they should all be 0). `free(arr)`.

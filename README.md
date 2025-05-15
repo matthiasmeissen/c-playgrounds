@@ -200,9 +200,9 @@ A place to learn the C programming language.
 - ✅ **Day 47: Using Dynamic Arrays & `free`**
     - **Topic:** Accessing elements of a dynamically allocated array using pointer arithmetic or bracket notation (`arr[i]`). Freeing the entire block with a single `free(arr)` call (using the original pointer returned by `malloc`).
     - **Exercise:** Continue Day 46: If allocation succeeded, use a loop to fill the array with values (e.g., 0.0, 1.1, 2.2, ...). Print the values using another loop. Then `free(arr)`.
-*   **Day 48: `calloc` Function**
-    *   **Topic:** `calloc(count, size_t size)` allocates memory for `count` elements of `size` bytes each *and* initializes the allocated memory to all bits zero. Returns `void*` or `NULL`.
-    *   **Exercise:** Allocate an array of 5 integers using `int *arr = calloc(5, sizeof(int));`. Check for `NULL`. Print the elements (they should all be 0). `free(arr)`.
+- ✅ **Day 48: `calloc` Function**
+    - **Topic:** `calloc(count, size_t size)` allocates memory for `count` elements of `size` bytes each *and* initializes the allocated memory to all bits zero. Returns `void*` or `NULL`.
+    - **Exercise:** Allocate an array of 5 integers using `int *arr = calloc(5, sizeof(int));`. Check for `NULL`. Print the elements (they should all be 0). `free(arr)`.
 *   **Day 49: `realloc` Function**
     *   **Topic:** Resizing a previously allocated memory block `realloc(ptr, new_size)`. Can grow or shrink. May move the block (returns new address). Returns `NULL` on failure (original block is *still valid* and needs freeing). If `ptr` is `NULL`, behaves like `malloc`. If `new_size` is 0, may free the block (implementation-defined, better use `free`).
     *   **Exercise:** `malloc` an array for 3 ints. `realloc` it to hold 5 ints (`int *new_arr = realloc(arr, 5 * sizeof(int));`). **CRITICAL:** Check if `new_arr` is `NULL`. If not, update your pointer (`arr = new_arr;`) and use the larger array. `free` the final pointer (`arr`).

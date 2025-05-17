@@ -207,10 +207,10 @@ A place to learn the C programming language.
     - **Topic:** Resizing a previously allocated memory block `realloc(ptr, new_size)`. Can grow or shrink. May move the block (returns new address). Returns `NULL` on failure (original block is *still valid* and needs freeing). If `ptr` is `NULL`, behaves like `malloc`. If `new_size` is 0, may free the block (implementation-defined, better use `free`).
     - **Exercise:** `malloc` an array for 3 ints. `realloc` it to hold 5 ints (`int *new_arr = realloc(arr, 5 * sizeof(int));`). **CRITICAL:** Check if `new_arr` is `NULL`. If not, update your pointer (`arr = new_arr;`) and use the larger array. `free` the final pointer (`arr`).
     - **Tip:** Handle `realloc` failure carefully: don't lose the original pointer if `realloc` returns `NULL`.
-*   **Day 50: Dangling Pointers**
-    *   **Topic:** A pointer that points to memory that has been freed or is otherwise invalid (e.g., points to a local variable after its function returns). Using a dangling pointer leads to undefined behavior (crashes, corrupted data).
-    *   **Exercise:** Allocate memory, store the pointer (`p`). `free(p)`. Then *try* to access `*p` (likely crash or garbage output - **undefined behavior**).
-    *   **Tip:** Set pointers to `NULL` immediately after `free`ing them (`free(p); p = NULL;`) to prevent accidentally using them later.
+- ✅ **Day 50: Dangling Pointers**
+    - **Topic:** A pointer that points to memory that has been freed or is otherwise invalid (e.g., points to a local variable after its function returns). Using a dangling pointer leads to undefined behavior (crashes, corrupted data).
+    - **Exercise:** Allocate memory, store the pointer (`p`). `free(p)`. Then *try* to access `*p` (likely crash or garbage output - **undefined behavior**).
+    - **Tip:** Set pointers to `NULL` immediately after `free`ing them (`free(p); p = NULL;`) to prevent accidentally using them later.
 *   **Day 51: NULL Pointer Dereference**
     *   **Topic:** Attempting to access memory via a pointer that is explicitly `NULL`. This reliably crashes on most modern systems (segmentation fault).
     *   **Exercise:** Declare `int *p = NULL;`. Try to print or assign to `*p` (program should crash).

@@ -211,10 +211,10 @@ A place to learn the C programming language.
     - **Topic:** A pointer that points to memory that has been freed or is otherwise invalid (e.g., points to a local variable after its function returns). Using a dangling pointer leads to undefined behavior (crashes, corrupted data).
     - **Exercise:** Allocate memory, store the pointer (`p`). `free(p)`. Then *try* to access `*p` (likely crash or garbage output - **undefined behavior**).
     - **Tip:** Set pointers to `NULL` immediately after `free`ing them (`free(p); p = NULL;`) to prevent accidentally using them later.
-*   **Day 51: NULL Pointer Dereference**
-    *   **Topic:** Attempting to access memory via a pointer that is explicitly `NULL`. This reliably crashes on most modern systems (segmentation fault).
-    *   **Exercise:** Declare `int *p = NULL;`. Try to print or assign to `*p` (program should crash).
-    *   **Tip:** Always check pointers before dereferencing if they *might* be NULL (e.g., after `malloc`, or if it's a function parameter that could be optional).
+- ✅ **Day 51: NULL Pointer Dereference**
+    - **Topic:** Attempting to access memory via a pointer that is explicitly `NULL`. This reliably crashes on most modern systems (segmentation fault).
+    - **Exercise:** Declare `int *p = NULL;`. Try to print or assign to `*p` (program should crash).
+    - **Tip:** Always check pointers before dereferencing if they *might* be NULL (e.g., after `malloc`, or if it's a function parameter that could be optional).
 *   **Day 52: Basic Error Handling: `stderr` & `exit`**
     *   **Topic:** Printing error messages to the standard error stream (`stderr`) instead of `stdout`. `fprintf(stderr, "Error: Something bad happened!\n");`. Exiting the program immediately with a non-zero status code to indicate failure (`exit(EXIT_FAILURE)` or `exit(1)`). Requires `<stdlib.h>`.
     *   **Exercise:** Modify the `malloc` check from Day 43: if `malloc` returns `NULL`, print an error message to `stderr` using `fprintf` and then call `exit(EXIT_FAILURE);`.

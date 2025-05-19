@@ -215,9 +215,9 @@ A place to learn the C programming language.
     - **Topic:** Attempting to access memory via a pointer that is explicitly `NULL`. This reliably crashes on most modern systems (segmentation fault).
     - **Exercise:** Declare `int *p = NULL;`. Try to print or assign to `*p` (program should crash).
     - **Tip:** Always check pointers before dereferencing if they *might* be NULL (e.g., after `malloc`, or if it's a function parameter that could be optional).
-*   **Day 52: Basic Error Handling: `stderr` & `exit`**
-    *   **Topic:** Printing error messages to the standard error stream (`stderr`) instead of `stdout`. `fprintf(stderr, "Error: Something bad happened!\n");`. Exiting the program immediately with a non-zero status code to indicate failure (`exit(EXIT_FAILURE)` or `exit(1)`). Requires `<stdlib.h>`.
-    *   **Exercise:** Modify the `malloc` check from Day 43: if `malloc` returns `NULL`, print an error message to `stderr` using `fprintf` and then call `exit(EXIT_FAILURE);`.
+- ✅ **Day 52: Basic Error Handling: `stderr` & `exit`**
+    - **Topic:** Printing error messages to the standard error stream (`stderr`) instead of `stdout`. `fprintf(stderr, "Error: Something bad happened!\n");`. Exiting the program immediately with a non-zero status code to indicate failure (`exit(EXIT_FAILURE)` or `exit(1)`). Requires `<stdlib.h>`.
+    - **Exercise:** Modify the `malloc` check from Day 43: if `malloc` returns `NULL`, print an error message to `stderr` using `fprintf` and then call `exit(EXIT_FAILURE);`.
 *   **Day 53: Using `perror`**
     *   **Topic:** `perror(const char *s)` prints the user-provided string `s`, followed by a colon, a space, and a system-specific error message corresponding to the global `errno` variable (which system calls like `malloc` or `fopen` set on failure). Requires `<stdio.h>` and `<errno.h>`.
     *   **Exercise:** After a potentially failed library call (like `malloc` or `fopen` later), if it fails (returns `NULL`), call `perror("Allocation failed")` or `perror("File open failed")` instead of just a generic `fprintf`. This gives more specific error info.

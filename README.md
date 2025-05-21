@@ -218,9 +218,9 @@ A place to learn the C programming language.
 - ✅ **Day 52: Basic Error Handling: `stderr` & `exit`**
     - **Topic:** Printing error messages to the standard error stream (`stderr`) instead of `stdout`. `fprintf(stderr, "Error: Something bad happened!\n");`. Exiting the program immediately with a non-zero status code to indicate failure (`exit(EXIT_FAILURE)` or `exit(1)`). Requires `<stdlib.h>`.
     - **Exercise:** Modify the `malloc` check from Day 43: if `malloc` returns `NULL`, print an error message to `stderr` using `fprintf` and then call `exit(EXIT_FAILURE);`.
-*   **Day 53: Using `perror`**
-    *   **Topic:** `perror(const char *s)` prints the user-provided string `s`, followed by a colon, a space, and a system-specific error message corresponding to the global `errno` variable (which system calls like `malloc` or `fopen` set on failure). Requires `<stdio.h>` and `<errno.h>`.
-    *   **Exercise:** After a potentially failed library call (like `malloc` or `fopen` later), if it fails (returns `NULL`), call `perror("Allocation failed")` or `perror("File open failed")` instead of just a generic `fprintf`. This gives more specific error info.
+- ✅ **Day 53: Using `perror`**
+    - **Topic:** `perror(const char *s)` prints the user-provided string `s`, followed by a colon, a space, and a system-specific error message corresponding to the global `errno` variable (which system calls like `malloc` or `fopen` set on failure). Requires `<stdio.h>` and `<errno.h>`.
+    - **Exercise:** After a potentially failed library call (like `malloc` or `fopen` later), if it fails (returns `NULL`), call `perror("Allocation failed")` or `perror("File open failed")` instead of just a generic `fprintf`. This gives more specific error info.
 *   **Day 54: Introduction to Debugger (`gdb` / IDE) - Breakpoints & Stepping**
     *   **Topic:** Using a debugger is *essential*. Learn to: compile with debug symbols (`gcc -g ...`), start the debugger (`gdb ./program`), set breakpoints (`break function_name` or `break line_number`), run (`run`), step over (`next`), step into (`step`), print variable values (`print var_name`), continue (`continue`).
     *   **Exercise:** Compile a program with a simple function (e.g., Day 24's `multiply`) using `-g`. Start `gdb`. Set a breakpoint at `multiply`. Run the program. When it stops, use `next` to step line-by-line. Use `print` to inspect the parameters `a` and `b`. Use `continue` to finish.

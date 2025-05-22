@@ -224,9 +224,9 @@ A place to learn the C programming language.
 - ✅ **Day 54: Introduction to Debugger (`gdb` / IDE) - Breakpoints & Stepping**
     - **Topic:** Using a debugger is *essential*. Learn to: compile with debug symbols (`gcc -g ...`), start the debugger (`gdb ./program`), set breakpoints (`break function_name` or `break line_number`), run (`run`), step over (`next`), step into (`step`), print variable values (`print var_name`), continue (`continue`).
     - **Exercise:** Compile a program with a simple function (e.g., Day 24's `multiply`) using `-g`. Start `gdb`. Set a breakpoint at `multiply`. Run the program. When it stops, use `next` to step line-by-line. Use `print` to inspect the parameters `a` and `b`. Use `continue` to finish.
-*   **Day 55: Review Phase 4**
-    *   **Topic:** Consolidate pointer and memory management concepts. This is the hardest part of C. Review `malloc`/`free`, pointer arithmetic, common errors.
-    *   **Exercise:** Write a function `int* create_range(int start, int end)` that creates a dynamically allocated array containing integers from `start` up to (but not including) `end`. Return the pointer (or `NULL` on failure). Write `main` code to call it, print the array, and `free` the memory.
+- ✅ **Day 55: Review Phase 4**
+    - **Topic:** Consolidate pointer and memory management concepts. This is the hardest part of C. Review `malloc`/`free`, pointer arithmetic, common errors.
+    - **Exercise:** Write a function `int* create_range(int start, int end)` that creates a dynamically allocated array containing integers from `start` up to (but not including) `end`. Return the pointer (or `NULL` on failure). Write `main` code to call it, print the array, and `free` the memory.
 
 ---
 

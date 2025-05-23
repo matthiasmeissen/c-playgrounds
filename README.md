@@ -232,7 +232,7 @@ A place to learn the C programming language.
 
 ### Phase 5: Arrays and Strings (Days 56-69)
 
-*   **Day 56: Static Arrays Recap & Initialization**
+- ✅ **Day 56: Static Arrays Recap & Initialization**
     *   **Topic:** Declaring fixed-size arrays (`type name[size];`), initializing with `{...}`. Accessing elements `arr[index]`. Array bounds are 0 to `size-1`.
     *   **Exercise:** Create an array of 5 `float`s representing grades. Initialize them directly. Print the third grade (`grades[2]`). Try accessing `grades[5]` (undefined behavior - potential crash).
     *   **Tip:** C does *not* automatically check array bounds. Accessing outside the bounds corrupts memory or crashes.

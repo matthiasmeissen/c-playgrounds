@@ -8,7 +8,15 @@ int main(void) {
     fprintf(stdout, "Third item in grades array has value of: %.2f\n", grades[2]);
 
     // Trying to access item number 6 which is out of bounds (will crash the program)
-    printf("Item number 6 is: %f\n", grades[5]);
+    // The compiler might give a warning, but lets you build this
+    printf("Item number 6 is: %.2f\n", grades[5]);
+
+    // You can still try to access this with a loop wich seems not to be checked by the compiler
+    for (int i = 0; i < 6; i++) {
+        // In this case on that machine it prints 0.00 for the 6 item
+        // Be aware that this is undefined behavior, it can be anything and might crash the program
+        printf("Item number %d is: %.2f\n", i + 1, grades[i]);
+    }
 
     return 0;
 }

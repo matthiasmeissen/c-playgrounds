@@ -236,9 +236,9 @@ A place to learn the C programming language.
     *   **Topic:** Declaring fixed-size arrays (`type name[size];`), initializing with `{...}`. Accessing elements `arr[index]`. Array bounds are 0 to `size-1`.
     *   **Exercise:** Create an array of 5 `float`s representing grades. Initialize them directly. Print the third grade (`grades[2]`). Try accessing `grades[5]` (undefined behavior - potential crash).
     *   **Tip:** C does *not* automatically check array bounds. Accessing outside the bounds corrupts memory or crashes.
-*   **Day 57: Looping Through Arrays**
-    *   **Topic:** Using `for` loops with an index (0 to `size-1`) to iterate over array elements.
-    *   **Exercise:** Calculate the sum and average of the grades in the array from Day 56 using a `for` loop.
+- ✅ **Day 57: Looping Through Arrays**
+    - **Topic:** Using `for` loops with an index (0 to `size-1`) to iterate over array elements.
+    - **Exercise:** Calculate the sum and average of the grades in the array from Day 56 using a `for` loop.
 *   **Day 58: Multi-dimensional Arrays (2D)**
     *   **Topic:** Declaring `type name[rows][cols]`. Stored in row-major order. Accessing `matrix[row][col]`.
     *   **Exercise:** Create a 2x3 integer matrix representing a small tic-tac-toe board. Initialize it (e.g., with 0s). Print the element at row 1, column 2. Use nested loops to print the whole matrix.

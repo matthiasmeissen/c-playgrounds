@@ -239,9 +239,9 @@ A place to learn the C programming language.
 - ✅ **Day 57: Looping Through Arrays**
     - **Topic:** Using `for` loops with an index (0 to `size-1`) to iterate over array elements.
     - **Exercise:** Calculate the sum and average of the grades in the array from Day 56 using a `for` loop.
-*   **Day 58: Multi-dimensional Arrays (2D)**
-    *   **Topic:** Declaring `type name[rows][cols]`. Stored in row-major order. Accessing `matrix[row][col]`.
-    *   **Exercise:** Create a 2x3 integer matrix representing a small tic-tac-toe board. Initialize it (e.g., with 0s). Print the element at row 1, column 2. Use nested loops to print the whole matrix.
+- ✅ **Day 58: Multi-dimensional Arrays (2D)**
+    - **Topic:** Declaring `type name[rows][cols]`. Stored in row-major order. Accessing `matrix[row][col]`.
+    - **Exercise:** Create a 2x3 integer matrix representing a small tic-tac-toe board. Initialize it (e.g., with 0s). Print the element at row 1, column 2. Use nested loops to print the whole matrix.
 *   **Day 59: C Strings: Null-Terminated Character Arrays**
     *   **Topic:** How strings are represented: arrays of `char` ending with a special null character (`\0`). String literals (`"Hello"`) automatically include the `\0`.
     *   **Exercise:** Declare `char message[] = "Hello C!";`. Print it using `printf("%s", message)`. Use `sizeof(message)` to see the storage size (includes `\0`).

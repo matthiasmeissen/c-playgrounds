@@ -242,9 +242,9 @@ A place to learn the C programming language.
 - ✅ **Day 58: Multi-dimensional Arrays (2D)**
     - **Topic:** Declaring `type name[rows][cols]`. Stored in row-major order. Accessing `matrix[row][col]`.
     - **Exercise:** Create a 2x3 integer matrix representing a small tic-tac-toe board. Initialize it (e.g., with 0s). Print the element at row 1, column 2. Use nested loops to print the whole matrix.
-*   **Day 59: C Strings: Null-Terminated Character Arrays**
-    *   **Topic:** How strings are represented: arrays of `char` ending with a special null character (`\0`). String literals (`"Hello"`) automatically include the `\0`.
-    *   **Exercise:** Declare `char message[] = "Hello C!";`. Print it using `printf("%s", message)`. Use `sizeof(message)` to see the storage size (includes `\0`).
+- ✅ **Day 59: C Strings: Null-Terminated Character Arrays**
+    - **Topic:** How strings are represented: arrays of `char` ending with a special null character (`\0`). String literals (`"Hello"`) automatically include the `\0`.
+    - **Exercise:** Declare `char message[] = "Hello C!";`. Print it using `printf("%s", message)`. Use `sizeof(message)` to see the storage size (includes `\0`).
 *   **Day 60: `strlen` Function**
     *   **Topic:** Get string length (number of characters *before* the `\0`). Requires `<string.h>`. `size_t strlen(const char *s);`.
     *   **Exercise:** Use `strlen(message)` on the string from Day 59 and print the result (should be 8). Compare with `sizeof`.

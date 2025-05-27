@@ -245,9 +245,9 @@ A place to learn the C programming language.
 - ✅ **Day 59: C Strings: Null-Terminated Character Arrays**
     - **Topic:** How strings are represented: arrays of `char` ending with a special null character (`\0`). String literals (`"Hello"`) automatically include the `\0`.
     - **Exercise:** Declare `char message[] = "Hello C!";`. Print it using `printf("%s", message)`. Use `sizeof(message)` to see the storage size (includes `\0`).
-*   **Day 60: `strlen` Function**
-    *   **Topic:** Get string length (number of characters *before* the `\0`). Requires `<string.h>`. `size_t strlen(const char *s);`.
-    *   **Exercise:** Use `strlen(message)` on the string from Day 59 and print the result (should be 8). Compare with `sizeof`.
+- ✅ **Day 60: `strlen` Function**
+    - **Topic:** Get string length (number of characters *before* the `\0`). Requires `<string.h>`. `size_t strlen(const char *s);`.
+    - **Exercise:** Use `strlen(message)` on the string from Day 59 and print the result (should be 8). Compare with `sizeof`.
 *   **Day 61: Implement `my_strlen`**
     *   **Topic:** Understand how `strlen` works internally by iterating until `\0` is found. Reinforces pointer/array traversal and null termination concept.
     *   **Exercise:** Write your own function `size_t my_strlen(const char *s)` that loops through the string using a pointer or index until `s[i] == '\0'` or `*p == '\0'` and returns the count. Test it.

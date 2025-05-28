@@ -248,9 +248,9 @@ A place to learn the C programming language.
 - ✅ **Day 60: `strlen` Function**
     - **Topic:** Get string length (number of characters *before* the `\0`). Requires `<string.h>`. `size_t strlen(const char *s);`.
     - **Exercise:** Use `strlen(message)` on the string from Day 59 and print the result (should be 8). Compare with `sizeof`.
-*   **Day 61: Implement `my_strlen`**
-    *   **Topic:** Understand how `strlen` works internally by iterating until `\0` is found. Reinforces pointer/array traversal and null termination concept.
-    *   **Exercise:** Write your own function `size_t my_strlen(const char *s)` that loops through the string using a pointer or index until `s[i] == '\0'` or `*p == '\0'` and returns the count. Test it.
+- ✅ **Day 61: Implement `my_strlen`**
+    - **Topic:** Understand how `strlen` works internally by iterating until `\0` is found. Reinforces pointer/array traversal and null termination concept.
+    - **Exercise:** Write your own function `size_t my_strlen(const char *s)` that loops through the string using a pointer or index until `s[i] == '\0'` or `*p == '\0'` and returns the count. Test it.
 *   **Day 62: `strcpy` (Unsafe!)**
     *   **Topic:** Copying one string into another. `char* strcpy(char *dest, const char *src);`. **DANGER:** Assumes `dest` is large enough. No bounds checking. Major source of buffer overflows if `src` is longer than `dest` buffer!
     *   **Exercise:** Declare `char src[] = "Copy me";` and `char dest[50];`. Use `strcpy(dest, src);`. Print `dest`. Now try with `char dest_small[5];` and `strcpy(dest_small, src);` (Likely crash or memory corruption!). **Avoid `strcpy` in real code.**

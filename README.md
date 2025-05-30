@@ -254,10 +254,10 @@ A place to learn the C programming language.
 - ✅ **Day 62: `strcpy` (Unsafe!)**
     - **Topic:** Copying one string into another. `char* strcpy(char *dest, const char *src);`. **DANGER:** Assumes `dest` is large enough. No bounds checking. Major source of buffer overflows if `src` is longer than `dest` buffer!
     - **Exercise:** Declare `char src[] = "Copy me";` and `char dest[50];`. Use `strcpy(dest, src);`. Print `dest`. Now try with `char dest_small[5];` and `strcpy(dest_small, src);` (Likely crash or memory corruption!). **Avoid `strcpy` in real code.**
-*   **Day 63: `strncpy` (Safer!)**
-    *   **Topic:** Copying up to `n` characters: `char* strncpy(char *dest, const char *src, size_t n);`. Copies at most `n` bytes. **CRITICAL CAVEAT:** If `src` length is `>= n`, `dest` will *not* be null-terminated!
-    *   **Exercise:** Use `strncpy` to copy `src` to `dest` (size 10). Use `strncpy(dest, src, 9); dest[9] = '\0';`. Print `dest`. This is the safe pattern: copy `size-1` bytes and manually null-terminate.
-    *   **Tip:** Always prefer `strncpy` (with manual null termination) over `strcpy`.
+- ✅ **Day 63: `strncpy` (Safer!)**
+    - **Topic:** Copying up to `n` characters: `char* strncpy(char *dest, const char *src, size_t n);`. Copies at most `n` bytes. **CRITICAL CAVEAT:** If `src` length is `>= n`, `dest` will *not* be null-terminated!
+    - **Exercise:** Use `strncpy` to copy `src` to `dest` (size 10). Use `strncpy(dest, src, 9); dest[9] = '\0';`. Print `dest`. This is the safe pattern: copy `size-1` bytes and manually null-terminate.
+    - **Tip:** Always prefer `strncpy` (with manual null termination) over `strcpy`.
 *   **Day 64: `strcat` (Unsafe!)**
     *   **Topic:** Concatenating (appending) `src` string onto the end of `dest`. `char* strcat(char *dest, const char *src);`. **DANGER:** Assumes `dest` has enough space for its current content PLUS `src` content PLUS the new `\0`. No bounds checking. Another major source of buffer overflows.
     *   **Exercise:** Declare `char dest[50] = "Hello ";` and `char src[] = "World!";`. Use `strcat(dest, src);`. Print `dest`. Try appending a very long string to a small `dest` (Crash!). **Avoid `strcat` in real code.**

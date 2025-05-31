@@ -258,9 +258,9 @@ A place to learn the C programming language.
     - **Topic:** Copying up to `n` characters: `char* strncpy(char *dest, const char *src, size_t n);`. Copies at most `n` bytes. **CRITICAL CAVEAT:** If `src` length is `>= n`, `dest` will *not* be null-terminated!
     - **Exercise:** Use `strncpy` to copy `src` to `dest` (size 10). Use `strncpy(dest, src, 9); dest[9] = '\0';`. Print `dest`. This is the safe pattern: copy `size-1` bytes and manually null-terminate.
     - **Tip:** Always prefer `strncpy` (with manual null termination) over `strcpy`.
-*   **Day 64: `strcat` (Unsafe!)**
-    *   **Topic:** Concatenating (appending) `src` string onto the end of `dest`. `char* strcat(char *dest, const char *src);`. **DANGER:** Assumes `dest` has enough space for its current content PLUS `src` content PLUS the new `\0`. No bounds checking. Another major source of buffer overflows.
-    *   **Exercise:** Declare `char dest[50] = "Hello ";` and `char src[] = "World!";`. Use `strcat(dest, src);`. Print `dest`. Try appending a very long string to a small `dest` (Crash!). **Avoid `strcat` in real code.**
+- ✅ **Day 64: `strcat` (Unsafe!)**
+    - **Topic:** Concatenating (appending) `src` string onto the end of `dest`. `char* strcat(char *dest, const char *src);`. **DANGER:** Assumes `dest` has enough space for its current content PLUS `src` content PLUS the new `\0`. No bounds checking. Another major source of buffer overflows.
+    - **Exercise:** Declare `char dest[50] = "Hello ";` and `char src[] = "World!";`. Use `strcat(dest, src);`. Print `dest`. Try appending a very long string to a small `dest` (Crash!). **Avoid `strcat` in real code.**
 *   **Day 65: `strncat` (Safer!)**
     *   **Topic:** Appending up to `n` characters from `src` to `dest`. `char* strncat(char *dest, const char *src, size_t n);`. Safer because it considers `n`, *and* it always null-terminates (if `n > 0`).
     *   **Exercise:** Use `strncat` to append `src` to `dest`. Calculate remaining space in `dest` first: `size_t remaining = sizeof(dest) - strlen(dest) - 1;`. Use `strncat(dest, src, remaining);`. Print `dest`.

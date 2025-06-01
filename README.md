@@ -261,10 +261,10 @@ A place to learn the C programming language.
 - ✅ **Day 64: `strcat` (Unsafe!)**
     - **Topic:** Concatenating (appending) `src` string onto the end of `dest`. `char* strcat(char *dest, const char *src);`. **DANGER:** Assumes `dest` has enough space for its current content PLUS `src` content PLUS the new `\0`. No bounds checking. Another major source of buffer overflows.
     - **Exercise:** Declare `char dest[50] = "Hello ";` and `char src[] = "World!";`. Use `strcat(dest, src);`. Print `dest`. Try appending a very long string to a small `dest` (Crash!). **Avoid `strcat` in real code.**
-*   **Day 65: `strncat` (Safer!)**
-    *   **Topic:** Appending up to `n` characters from `src` to `dest`. `char* strncat(char *dest, const char *src, size_t n);`. Safer because it considers `n`, *and* it always null-terminates (if `n > 0`).
-    *   **Exercise:** Use `strncat` to append `src` to `dest`. Calculate remaining space in `dest` first: `size_t remaining = sizeof(dest) - strlen(dest) - 1;`. Use `strncat(dest, src, remaining);`. Print `dest`.
-    *   **Tip:** Always prefer `strncat` over `strcat`. Calculate the max characters to append (`n`) carefully based on remaining buffer space.
+- ✅ **Day 65: `strncat` (Safer!)**
+    - **Topic:** Appending up to `n` characters from `src` to `dest`. `char* strncat(char *dest, const char *src, size_t n);`. Safer because it considers `n`, *and* it always null-terminates (if `n > 0`).
+    - **Exercise:** Use `strncat` to append `src` to `dest`. Calculate remaining space in `dest` first: `size_t remaining = sizeof(dest) - strlen(dest) - 1;`. Use `strncat(dest, src, remaining);`. Print `dest`.
+    - **Tip:** Always prefer `strncat` over `strcat`. Calculate the max characters to append (`n`) carefully based on remaining buffer space.
 *   **Day 66: `strcmp` Function**
     *   **Topic:** Comparing two strings lexicographically (like dictionary order). `int strcmp(const char *s1, const char *s2);`. Returns: `< 0` if `s1 < s2`, `0` if `s1 == s2`, `> 0` if `s1 > s2`.
     *   **Exercise:** Compare `"apple"` vs `"banana"`, `"apple"` vs `"apple"`, `"banana"` vs `"apple"` using `strcmp`. Print the integer results and interpret them.

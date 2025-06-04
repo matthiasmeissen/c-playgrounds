@@ -272,9 +272,9 @@ A place to learn the C programming language.
     - **Topic:** Reading a line of text (including spaces) safely from an input stream (like `stdin`). `char* fgets(char *buffer, int size, FILE *stream);`. Reads up to `size-1` chars, stores `\n` if read before hitting size limit, and always null-terminates the buffer. Returns `buffer` on success, `NULL` on EOF or error.
     - **Exercise:** Declare `char line[100];`. Ask user for their full name. Read it using `fgets(line, sizeof(line), stdin)`. Print the line.
     - **Tip:** **`fgets` is the standard, safe way to read string input in C.** Strongly prefer it over `scanf` for strings.
-*   **Day 68: Processing `fgets` Input (Removing Trailing Newline)**
-    *   **Topic:** `fgets` usually includes the `\n` if it fits. Often, you want to remove it. Common technique: `line[strcspn(line, "\n")] = 0;` finds the first newline and replaces it with `\0`. (Requires `<string.h>`).
-    *   **Exercise:** After reading with `fgets` (Day 67), add the `strcspn` line to remove the trailing newline (if present). Print the string again to verify.
+- ✅ **Day 68: Processing `fgets` Input (Removing Trailing Newline)**
+    - **Topic:** `fgets` usually includes the `\n` if it fits. Often, you want to remove it. Common technique: `line[strcspn(line, "\n")] = 0;` finds the first newline and replaces it with `\0`. (Requires `<string.h>`).
+    - **Exercise:** After reading with `fgets` (Day 67), add the `strcspn` line to remove the trailing newline (if present). Print the string again to verify.
 *   **Day 69: Review Phase 5**
     *   **Topic:** Consolidate arrays, C strings, null termination, pointer/array relationship, and SAFE string handling (`strncpy`, `strncat`, `fgets`). Dangers of unsafe functions (`strcpy`, `strcat`, `scanf %s`).
     *   **Exercise:** Write a program that reads a line of text using `fgets`, then reverses the string in-place (you might need pointers or indices moving from both ends). Print the reversed string.

@@ -283,9 +283,9 @@ A place to learn the C programming language.
 
 ### Phase 6: Structs and Basic File I/O (Days 70-83)
 
-*   **Day 70: Defining `struct`s**
-    *   **Topic:** Grouping related data variables of different types under a single type name. `struct Point { int x; int y; };`. Defines a new type `struct Point`.
-    *   **Exercise:** Define a `struct Book` with fields like `char title[100];`, `char author[50];`, `int year;`.
+- ✅ **Day 70: Defining `struct`s**
+    - **Topic:** Grouping related data variables of different types under a single type name. `struct Point { int x; int y; };`. Defines a new type `struct Point`.
+    - **Exercise:** Define a `struct Book` with fields like `char title[100];`, `char author[50];`, `int year;`.
 *   **Day 71: Creating `struct` Instances & Accessing Members (`.`)**
     *   **Topic:** Declaring variables of `struct` type (`struct Book my_book;`). Accessing members using the dot operator (`.`).
     *   **Exercise:** Create an instance of `struct Book`. Initialize its fields (use `strncpy` for title/author!). Print the `title` and `year` using the dot operator.

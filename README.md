@@ -289,9 +289,9 @@ A place to learn the C programming language.
 - ✅ **Day 71: Creating `struct` Instances & Accessing Members (`.`)**
     - **Topic:** Declaring variables of `struct` type (`struct Book my_book;`). Accessing members using the dot operator (`.`).
     - **Exercise:** Create an instance of `struct Book`. Initialize its fields (use `strncpy` for title/author!). Print the `title` and `year` using the dot operator.
-*   **Day 72: Pointers to `struct`s (`->`)**
-    *   **Topic:** Declaring pointers to structs (`struct Book *book_ptr = &my_book;`). Accessing members via a pointer using the arrow operator (`->`). (`ptr->member` is syntactic sugar for `(*ptr).member`).
-    *   **Exercise:** Create a pointer to your `Book` instance. Access and print the `author` using the `->` operator.
+- ✅ **Day 72: Pointers to `struct`s (`->`)**
+    - **Topic:** Declaring pointers to structs (`struct Book *book_ptr = &my_book;`). Accessing members via a pointer using the arrow operator (`->`). (`ptr->member` is syntactic sugar for `(*ptr).member`).
+    - **Exercise:** Create a pointer to your `Book` instance. Access and print the `author` using the `->` operator.
 *   **Day 73: Structs as Function Parameters (By Value)**
     *   **Topic:** Passing entire structs to functions. This makes a complete copy of the struct. Can be inefficient for large structs.
     *   **Exercise:** Write a function `void print_book(struct Book b)` that prints all fields of a book struct passed by value. Call it with your instance.

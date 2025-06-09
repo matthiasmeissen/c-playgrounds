@@ -292,9 +292,9 @@ A place to learn the C programming language.
 - ✅ **Day 72: Pointers to `struct`s (`->`)**
     - **Topic:** Declaring pointers to structs (`struct Book *book_ptr = &my_book;`). Accessing members via a pointer using the arrow operator (`->`). (`ptr->member` is syntactic sugar for `(*ptr).member`).
     - **Exercise:** Create a pointer to your `Book` instance. Access and print the `author` using the `->` operator.
-*   **Day 73: Structs as Function Parameters (By Value)**
-    *   **Topic:** Passing entire structs to functions. This makes a complete copy of the struct. Can be inefficient for large structs.
-    *   **Exercise:** Write a function `void print_book(struct Book b)` that prints all fields of a book struct passed by value. Call it with your instance.
+- ✅ **Day 73: Structs as Function Parameters (By Value)**
+    - **Topic:** Passing entire structs to functions. This makes a complete copy of the struct. Can be inefficient for large structs.
+    - **Exercise:** Write a function `void print_book(struct Book b)` that prints all fields of a book struct passed by value. Call it with your instance.
 *   **Day 74: Structs as Function Parameters (By Pointer)**
     *   **Topic:** Passing pointers to structs (`struct Book *b_ptr`). More efficient (only address is copied). Allows the function to modify the original struct. Use `const struct Book *b_ptr` if the function shouldn't modify it.
     *   **Exercise:** Write a function `void update_year(struct Book *b_ptr, int new_year)` that modifies the year field via the pointer. Call it and verify the change in the original `my_book` instance in `main`.

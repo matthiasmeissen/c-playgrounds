@@ -298,9 +298,9 @@ A place to learn the C programming language.
 - ✅ **Day 74: Structs as Function Parameters (By Pointer)**
     - **Topic:** Passing pointers to structs (`struct Book *b_ptr`). More efficient (only address is copied). Allows the function to modify the original struct. Use `const struct Book *b_ptr` if the function shouldn't modify it.
     - **Exercise:** Write a function `void update_year(struct Book *b_ptr, int new_year)` that modifies the year field via the pointer. Call it and verify the change in the original `my_book` instance in `main`.
-*   **Day 75: File Pointers (`FILE *`)**
-    *   **Topic:** Introduction to file handling. The `FILE` type (defined in `<stdio.h>`) is an opaque struct holding file stream info. Use `FILE *fptr;` to declare a file pointer.
-    *   **Exercise:** Declare a `FILE *output_file;`. Understand it will hold the information returned by `fopen` to interact with a file.
+- ✅ **Day 75: File Pointers (`FILE *`)**
+    - **Topic:** Introduction to file handling. The `FILE` type (defined in `<stdio.h>`) is an opaque struct holding file stream info. Use `FILE *fptr;` to declare a file pointer.
+    - **Exercise:** Declare a `FILE *output_file;`. Understand it will hold the information returned by `fopen` to interact with a file.
 *   **Day 76: Opening Files (`fopen`) & Closing (`fclose`)**
     *   **Topic:** `fopen("filename", "mode")`. Modes: `"r"` (read), `"w"` (write - creates/truncates), `"a"` (append - creates/adds to end). Returns `FILE*` on success, `NULL` on error. `int fclose(FILE *stream)` closes the file, flushing buffers. Returns 0 on success, `EOF` on error.
     *   **Exercise:** Try to open a file named `output.txt` in write mode (`"w"`). **CRITICAL:** Check if the returned pointer is `NULL`. If not `NULL`, print "File opened successfully" and immediately call `fclose` on the pointer. If `NULL`, use `perror("fopen failed")` to print an error.

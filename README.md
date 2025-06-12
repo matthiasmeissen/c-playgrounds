@@ -301,10 +301,10 @@ A place to learn the C programming language.
 - ✅ **Day 75: File Pointers (`FILE *`)**
     - **Topic:** Introduction to file handling. The `FILE` type (defined in `<stdio.h>`) is an opaque struct holding file stream info. Use `FILE *fptr;` to declare a file pointer.
     - **Exercise:** Declare a `FILE *output_file;`. Understand it will hold the information returned by `fopen` to interact with a file.
-*   **Day 76: Opening Files (`fopen`) & Closing (`fclose`)**
-    *   **Topic:** `fopen("filename", "mode")`. Modes: `"r"` (read), `"w"` (write - creates/truncates), `"a"` (append - creates/adds to end). Returns `FILE*` on success, `NULL` on error. `int fclose(FILE *stream)` closes the file, flushing buffers. Returns 0 on success, `EOF` on error.
-    *   **Exercise:** Try to open a file named `output.txt` in write mode (`"w"`). **CRITICAL:** Check if the returned pointer is `NULL`. If not `NULL`, print "File opened successfully" and immediately call `fclose` on the pointer. If `NULL`, use `perror("fopen failed")` to print an error.
-    *   **Tip:** Always pair `fopen` with `fclose`. Always check `fopen`'s return value.
+- ✅ **Day 76: Opening Files (`fopen`) & Closing (`fclose`)**
+    - **Topic:** `fopen("filename", "mode")`. Modes: `"r"` (read), `"w"` (write - creates/truncates), `"a"` (append - creates/adds to end). Returns `FILE*` on success, `NULL` on error. `int fclose(FILE *stream)` closes the file, flushing buffers. Returns 0 on success, `EOF` on error.
+    - **Exercise:** Try to open a file named `output.txt` in write mode (`"w"`). **CRITICAL:** Check if the returned pointer is `NULL`. If not `NULL`, print "File opened successfully" and immediately call `fclose` on the pointer. If `NULL`, use `perror("fopen failed")` to print an error.
+    - **Tip:** Always pair `fopen` with `fclose`. Always check `fopen`'s return value.
 *   **Day 77: Writing Characters (`fputc`)**
     *   **Topic:** Writing a single character `int fputc(int c, FILE *stream);`. Returns the character written or `EOF` on error.
     *   **Exercise:** Open `data.txt` in `"w"` mode (check for NULL!). Write the characters 'H', 'e', 'l', 'l', 'o', '\n' using a loop or individual `fputc` calls. `fclose` the file. Use a text editor or `cat` command to check the file contents.

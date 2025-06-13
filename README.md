@@ -305,9 +305,9 @@ A place to learn the C programming language.
     - **Topic:** `fopen("filename", "mode")`. Modes: `"r"` (read), `"w"` (write - creates/truncates), `"a"` (append - creates/adds to end). Returns `FILE*` on success, `NULL` on error. `int fclose(FILE *stream)` closes the file, flushing buffers. Returns 0 on success, `EOF` on error.
     - **Exercise:** Try to open a file named `output.txt` in write mode (`"w"`). **CRITICAL:** Check if the returned pointer is `NULL`. If not `NULL`, print "File opened successfully" and immediately call `fclose` on the pointer. If `NULL`, use `perror("fopen failed")` to print an error.
     - **Tip:** Always pair `fopen` with `fclose`. Always check `fopen`'s return value.
-*   **Day 77: Writing Characters (`fputc`)**
-    *   **Topic:** Writing a single character `int fputc(int c, FILE *stream);`. Returns the character written or `EOF` on error.
-    *   **Exercise:** Open `data.txt` in `"w"` mode (check for NULL!). Write the characters 'H', 'e', 'l', 'l', 'o', '\n' using a loop or individual `fputc` calls. `fclose` the file. Use a text editor or `cat` command to check the file contents.
+- ✅ **Day 77: Writing Characters (`fputc`)**
+    - **Topic:** Writing a single character `int fputc(int c, FILE *stream);`. Returns the character written or `EOF` on error.
+    - **Exercise:** Open `data.txt` in `"w"` mode (check for NULL!). Write the characters 'H', 'e', 'l', 'l', 'o', '\n' using a loop or individual `fputc` calls. `fclose` the file. Use a text editor or `cat` command to check the file contents.
 *   **Day 78: Reading Characters (`fgetc`) & `EOF`**
     *   **Topic:** Reading a single character `int fgetc(FILE *stream);`. Returns the character read (as an `int`) or `EOF` (a special negative integer) on end-of-file or error.
     *   **Exercise:** Open `data.txt` (created Day 77) in `"r"` mode (check!). Use a `while` loop: `int c; while ((c = fgetc(fptr)) != EOF) { putchar(c); }`. `putchar(c)` prints the character to the console. `fclose`.

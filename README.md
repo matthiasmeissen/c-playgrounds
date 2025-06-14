@@ -308,10 +308,10 @@ A place to learn the C programming language.
 - ✅ **Day 77: Writing Characters (`fputc`)**
     - **Topic:** Writing a single character `int fputc(int c, FILE *stream);`. Returns the character written or `EOF` on error.
     - **Exercise:** Open `data.txt` in `"w"` mode (check for NULL!). Write the characters 'H', 'e', 'l', 'l', 'o', '\n' using a loop or individual `fputc` calls. `fclose` the file. Use a text editor or `cat` command to check the file contents.
-*   **Day 78: Reading Characters (`fgetc`) & `EOF`**
-    *   **Topic:** Reading a single character `int fgetc(FILE *stream);`. Returns the character read (as an `int`) or `EOF` (a special negative integer) on end-of-file or error.
-    *   **Exercise:** Open `data.txt` (created Day 77) in `"r"` mode (check!). Use a `while` loop: `int c; while ((c = fgetc(fptr)) != EOF) { putchar(c); }`. `putchar(c)` prints the character to the console. `fclose`.
-    *   **Tip:** The loop condition `(c = fgetc(fptr)) != EOF` is a standard C idiom for reading until end-of-file. Store the result in an `int` to correctly distinguish `EOF` from valid character values like `\xFF`.
+- ✅ **Day 78: Reading Characters (`fgetc`) & `EOF`**
+    - **Topic:** Reading a single character `int fgetc(FILE *stream);`. Returns the character read (as an `int`) or `EOF` (a special negative integer) on end-of-file or error.
+    - **Exercise:** Open `data.txt` (created Day 77) in `"r"` mode (check!). Use a `while` loop: `int c; while ((c = fgetc(fptr)) != EOF) { putchar(c); }`. `putchar(c)` prints the character to the console. `fclose`.
+    - **Tip:** The loop condition `(c = fgetc(fptr)) != EOF` is a standard C idiom for reading until end-of-file. Store the result in an `int` to correctly distinguish `EOF` from valid character values like `\xFF`.
 *   **Day 79: Formatted File Writing (`fprintf`)**
     *   **Topic:** Writing formatted output to a file, similar to `printf`. `int fprintf(FILE *stream, const char *format, ...);`.
     *   **Exercise:** Open `log.txt` in `"w"` mode (check!). Use `fprintf` to write details of a `Book` struct instance (from Day 71) to the file, e.g., `fprintf(fptr, "Title: %s, Author: %s, Year: %d\n", my_book.title, my_book.author, my_book.year);`. `fclose`. Check file.

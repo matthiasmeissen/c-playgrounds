@@ -21,7 +21,7 @@ int main(void) {
     FILE * filePtr;
 
     // Create character array variable to hold filename
-    const char fileName = "text.md";
+    const char fileName[] = "text.md";
 
     // Create filestream (or open file) to filename in write mode
     // Store key in filePtr
@@ -33,7 +33,11 @@ int main(void) {
         return EXIT_FAILURE;
     }
 
+    // Use fprintf(FILE *, "") to print to the console (the standard out stream)
     fprintf(stdout, "Successfully opened %s\n", fileName);
+
+    // Use fprintf() again, but choose the filePtr as stream, this writes to the file
+    fprintf(filePtr, "Title: %s, Author: %s, Year: %d\n", myBook.title, myBook.author, myBook.year);
 
     // Close the filestream and check for success
     if (fclose(filePtr) != 0) {

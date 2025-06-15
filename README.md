@@ -312,9 +312,9 @@ A place to learn the C programming language.
     - **Topic:** Reading a single character `int fgetc(FILE *stream);`. Returns the character read (as an `int`) or `EOF` (a special negative integer) on end-of-file or error.
     - **Exercise:** Open `data.txt` (created Day 77) in `"r"` mode (check!). Use a `while` loop: `int c; while ((c = fgetc(fptr)) != EOF) { putchar(c); }`. `putchar(c)` prints the character to the console. `fclose`.
     - **Tip:** The loop condition `(c = fgetc(fptr)) != EOF` is a standard C idiom for reading until end-of-file. Store the result in an `int` to correctly distinguish `EOF` from valid character values like `\xFF`.
-*   **Day 79: Formatted File Writing (`fprintf`)**
-    *   **Topic:** Writing formatted output to a file, similar to `printf`. `int fprintf(FILE *stream, const char *format, ...);`.
-    *   **Exercise:** Open `log.txt` in `"w"` mode (check!). Use `fprintf` to write details of a `Book` struct instance (from Day 71) to the file, e.g., `fprintf(fptr, "Title: %s, Author: %s, Year: %d\n", my_book.title, my_book.author, my_book.year);`. `fclose`. Check file.
+- ✅ **Day 79: Formatted File Writing (`fprintf`)**
+    - **Topic:** Writing formatted output to a file, similar to `printf`. `int fprintf(FILE *stream, const char *format, ...);`.
+    - **Exercise:** Open `log.txt` in `"w"` mode (check!). Use `fprintf` to write details of a `Book` struct instance (from Day 71) to the file, e.g., `fprintf(fptr, "Title: %s, Author: %s, Year: %d\n", my_book.title, my_book.author, my_book.year);`. `fclose`. Check file.
 *   **Day 80: Formatted File Reading (`fscanf`)**
     *   **Topic:** Reading formatted input from a file, similar to `scanf`. `int fscanf(FILE *stream, const char *format, ...);`. Returns number of items successfully assigned. **CAUTION:** Same pitfalls as `scanf` (whitespace handling, buffer overflows for `%s`). Often better to read lines with `fgets` and parse them.
     *   **Exercise:** Open `log.txt` in `"r"` mode (check!). Read the book data back using `fscanf(fptr, "Title: %99s Author: %49s Year: %d\n", title_buffer, author_buffer, &year);` (Use width limits `%99s` for safety! Ensure buffers are large enough). Check `fscanf`'s return value (should be 3). Print the read data. `fclose`.

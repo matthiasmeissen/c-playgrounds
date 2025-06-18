@@ -322,9 +322,9 @@ A place to learn the C programming language.
 - ✅ **Day 81: Reading Lines from Files (`fgets`)**
     - **Topic:** Safer way to read lines from files. `fgets(buffer, size, fptr)`. Reads up to `size-1` chars, includes `\n` if read, null-terminates. Returns `NULL` on EOF or error.
     - **Exercise:** Open a text file (e.g., your `hello.c` or `data.txt`) in `"r"` mode (check!). Read it line by line using `fgets` in a `while (fgets(line_buffer, sizeof(line_buffer), fptr) != NULL)` loop. Print each line. `fclose`.
-*   **Day 82: Writing Strings to Files (`fputs`)**
-    *   **Topic:** Writing a null-terminated string to a file. `int fputs(const char *s, FILE *stream);`. Returns non-negative on success, `EOF` on error. **Does not** add a newline automatically.
-    *   **Exercise:** Open `output_fputs.txt` in `"w"` mode (check!). Write several strings using `fputs`. Add `\n` explicitly where needed, e.g., `fputs("First line.\n", fptr);`. `fclose`. Check file.
+- ✅ **Day 82: Writing Strings to Files (`fputs`)**
+    - **Topic:** Writing a null-terminated string to a file. `int fputs(const char *s, FILE *stream);`. Returns non-negative on success, `EOF` on error. **Does not** add a newline automatically.
+    - **Exercise:** Open `output_fputs.txt` in `"w"` mode (check!). Write several strings using `fputs`. Add `\n` explicitly where needed, e.g., `fputs("First line.\n", fptr);`. `fclose`. Check file.
 *   **Day 83: Checking File Errors (`feof`, `ferror`)**
     *   **Topic:** After a read loop finishes (e.g., `fgetc` returns `EOF` or `fgets` returns `NULL`), distinguish between a clean end-of-file (`feof(fptr)` returns non-zero) and an actual read/write error (`ferror(fptr)` returns non-zero).
     *   **Exercise:** Modify the `fgets` loop from Day 81. After the loop finishes, check `if (ferror(fptr))` and print an error message to `stderr` if true. Otherwise, if `feof(fptr)` is true, you know it reached the end normally. `clearerr(fptr)` can reset error/EOF indicators if needed.

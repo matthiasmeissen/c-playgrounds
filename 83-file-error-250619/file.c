@@ -44,7 +44,6 @@ int main(void) {
     } else {
         printf("Something else was with the file.\n");
     }
-
     // Close filestream in if statement, check if not 0 for failure
     if (fclose(filePtr) != 0) {
         perror("Error closing the file.");

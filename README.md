@@ -333,9 +333,9 @@ A place to learn the C programming language.
 
 ### Phase 7: Building CLI Tools & Intermediate Topics (Days 84-99)
 
-*   **Day 84: `main` Arguments (`argc`, `argv`)**
-    *   **Topic:** Receiving command-line arguments passed when running the program. `int main(int argc, char *argv[])`. `argc` (argument count) is number of strings in `argv`. `argv` (argument vector) is an array of strings (`char*`). `argv[0]` is always the program name. `argv[argc]` is guaranteed to be `NULL`.
-    *   **Exercise:** Write a program that prints the value of `argc`. Then loop from `i = 0` to `argc - 1` and print `argv[i]` on each line, labeled with its index. Run like: `./myprog first "second arg" third`.
+- ✅ **Day 84: `main` Arguments (`argc`, `argv`)**
+    - **Topic:** Receiving command-line arguments passed when running the program. `int main(int argc, char *argv[])`. `argc` (argument count) is number of strings in `argv`. `argv` (argument vector) is an array of strings (`char*`). `argv[0]` is always the program name. `argv[argc]` is guaranteed to be `NULL`.
+    - **Exercise:** Write a program that prints the value of `argc`. Then loop from `i = 0` to `argc - 1` and print `argv[i]` on each line, labeled with its index. Run like: `./myprog first "second arg" third`.
 *   **Day 85: Parsing `argv`: Checking Argument Count**
     *   **Topic:** Basic input validation: check if the user provided the expected number of arguments using `argc` before trying to access `argv[1]`, `argv[2]`, etc.
     *   **Exercise:** Write a program that expects exactly one argument after the program name (i.e., `argc == 2`). If `argc` is not 2, print a usage message to `stderr` (e.g., `fprintf(stderr, "Usage: %s <input_file>\n", argv[0]);`) and `exit(EXIT_FAILURE)`. If correct, print "Input file specified: [argument]".

@@ -339,9 +339,9 @@ A place to learn the C programming language.
 - ✅ **Day 85: Parsing `argv`: Checking Argument Count**
     - **Topic:** Basic input validation: check if the user provided the expected number of arguments using `argc` before trying to access `argv[1]`, `argv[2]`, etc.
     - **Exercise:** Write a program that expects exactly one argument after the program name (i.e., `argc == 2`). If `argc` is not 2, print a usage message to `stderr` (e.g., `fprintf(stderr, "Usage: %s <input_file>\n", argv[0]);`) and `exit(EXIT_FAILURE)`. If correct, print "Input file specified: [argument]".
-*   **Day 86: String to Number Conversion (`atoi`, `atof`)**
-    *   **Topic:** Converting argument strings (which are `char*`) to numbers. Simple functions from `<stdlib.h>`: `int atoi(const char *str);`, `double atof(const char *str);`. **Warning:** Very limited error checking (e.g., `atoi("abc")` returns 0, indistinguishable from `atoi("0")`).
-    *   **Exercise:** Write a program that takes one command-line argument (`argv[1]`), converts it to an integer using `atoi`, adds 10 to it, and prints the result. Run with valid numbers and invalid input like "hello" to see `atoi`'s behavior.
+- ✅ **Day 86: String to Number Conversion (`atoi`, `atof`)**
+    - **Topic:** Converting argument strings (which are `char*`) to numbers. Simple functions from `<stdlib.h>`: `int atoi(const char *str);`, `double atof(const char *str);`. **Warning:** Very limited error checking (e.g., `atoi("abc")` returns 0, indistinguishable from `atoi("0")`).
+    - **Exercise:** Write a program that takes one command-line argument (`argv[1]`), converts it to an integer using `atoi`, adds 10 to it, and prints the result. Run with valid numbers and invalid input like "hello" to see `atoi`'s behavior.
 *   **Day 87: Safer Conversion (`strtol`, `strtod`)**
     *   **Topic:** More robust conversion functions from `<stdlib.h>`: `long strtol(const char *str, char **endptr, int base);`, `double strtod(const char *str, char **endptr);`. They allow checking if the *entire* string was consumed (`*endptr == '\0'` after call) and provide better error detection via `errno`.
     *   **Exercise:** Re-do Day 86 using `strtol`. Declare `char *endptr; long num = strtol(argv[1], &endptr, 10);`. After the call, check if `*endptr != '\0'` (means invalid characters found). If valid, print `num + 10`. If invalid, print an error message. (Full `errno` checking is more complex, focus on `endptr` check first).

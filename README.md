@@ -342,10 +342,10 @@ A place to learn the C programming language.
 - ✅ **Day 86: String to Number Conversion (`atoi`, `atof`)**
     - **Topic:** Converting argument strings (which are `char*`) to numbers. Simple functions from `<stdlib.h>`: `int atoi(const char *str);`, `double atof(const char *str);`. **Warning:** Very limited error checking (e.g., `atoi("abc")` returns 0, indistinguishable from `atoi("0")`).
     - **Exercise:** Write a program that takes one command-line argument (`argv[1]`), converts it to an integer using `atoi`, adds 10 to it, and prints the result. Run with valid numbers and invalid input like "hello" to see `atoi`'s behavior.
-*   **Day 87: Safer Conversion (`strtol`, `strtod`)**
-    *   **Topic:** More robust conversion functions from `<stdlib.h>`: `long strtol(const char *str, char **endptr, int base);`, `double strtod(const char *str, char **endptr);`. They allow checking if the *entire* string was consumed (`*endptr == '\0'` after call) and provide better error detection via `errno`.
-    *   **Exercise:** Re-do Day 86 using `strtol`. Declare `char *endptr; long num = strtol(argv[1], &endptr, 10);`. After the call, check if `*endptr != '\0'` (means invalid characters found). If valid, print `num + 10`. If invalid, print an error message. (Full `errno` checking is more complex, focus on `endptr` check first).
-    *   **Tip:** Prefer `strtol`/`strtod` over `atoi`/`atof` for any serious argument parsing.
+- ✅ **Day 87: Safer Conversion (`strtol`, `strtod`)**
+    - **Topic:** More robust conversion functions from `<stdlib.h>`: `long strtol(const char *str, char **endptr, int base);`, `double strtod(const char *str, char **endptr);`. They allow checking if the *entire* string was consumed (`*endptr == '\0'` after call) and provide better error detection via `errno`.
+    - **Exercise:** Re-do Day 86 using `strtol`. Declare `char *endptr; long num = strtol(argv[1], &endptr, 10);`. After the call, check if `*endptr != '\0'` (means invalid characters found). If valid, print `num + 10`. If invalid, print an error message. (Full `errno` checking is more complex, focus on `endptr` check first).
+    - **Tip:** Prefer `strtol`/`strtod` over `atoi`/`atof` for any serious argument parsing.
 *   **Day 88: Project: `echo` Clone (Basic)**
     *   **Topic:** Applying `argc`/`argv` parsing. Mimic the standard `echo` command.
     *   **Exercise:** Implement `myecho`: loop through `argv` starting from index 1 (`i=1` to `argc-1`). Print each argument (`argv[i]`). Print a space *between* arguments (but not after the last one). Print a single newline at the very end.

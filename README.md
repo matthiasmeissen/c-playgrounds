@@ -346,9 +346,9 @@ A place to learn the C programming language.
     - **Topic:** More robust conversion functions from `<stdlib.h>`: `long strtol(const char *str, char **endptr, int base);`, `double strtod(const char *str, char **endptr);`. They allow checking if the *entire* string was consumed (`*endptr == '\0'` after call) and provide better error detection via `errno`.
     - **Exercise:** Re-do Day 86 using `strtol`. Declare `char *endptr; long num = strtol(argv[1], &endptr, 10);`. After the call, check if `*endptr != '\0'` (means invalid characters found). If valid, print `num + 10`. If invalid, print an error message. (Full `errno` checking is more complex, focus on `endptr` check first).
     - **Tip:** Prefer `strtol`/`strtod` over `atoi`/`atof` for any serious argument parsing.
-*   **Day 88: Project: `echo` Clone (Basic)**
-    *   **Topic:** Applying `argc`/`argv` parsing. Mimic the standard `echo` command.
-    *   **Exercise:** Implement `myecho`: loop through `argv` starting from index 1 (`i=1` to `argc-1`). Print each argument (`argv[i]`). Print a space *between* arguments (but not after the last one). Print a single newline at the very end.
+- ✅ **Day 88: Project: `echo` Clone (Basic)**
+    - **Topic:** Applying `argc`/`argv` parsing. Mimic the standard `echo` command.
+    - **Exercise:** Implement `myecho`: loop through `argv` starting from index 1 (`i=1` to `argc-1`). Print each argument (`argv[i]`). Print a space *between* arguments (but not after the last one). Print a single newline at the very end.
 *   **Day 89: Project: `echo` Clone (`-n` flag)**
     *   **Topic:** Simple command-line option parsing. Checking `argv[1]` for a specific flag.
     *   **Exercise:** Modify `myecho`: If the first argument (`argc > 1 && strcmp(argv[1], "-n") == 0`), then print arguments `argv[2]` onwards *without* the final newline. Otherwise, behave as before (print args `argv[1]` onwards *with* the final newline).

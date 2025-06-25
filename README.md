@@ -349,9 +349,9 @@ A place to learn the C programming language.
 - ✅ **Day 88: Project: `echo` Clone (Basic)**
     - **Topic:** Applying `argc`/`argv` parsing. Mimic the standard `echo` command.
     - **Exercise:** Implement `myecho`: loop through `argv` starting from index 1 (`i=1` to `argc-1`). Print each argument (`argv[i]`). Print a space *between* arguments (but not after the last one). Print a single newline at the very end.
-*   **Day 89: Project: `echo` Clone (`-n` flag)**
-    *   **Topic:** Simple command-line option parsing. Checking `argv[1]` for a specific flag.
-    *   **Exercise:** Modify `myecho`: If the first argument (`argc > 1 && strcmp(argv[1], "-n") == 0`), then print arguments `argv[2]` onwards *without* the final newline. Otherwise, behave as before (print args `argv[1]` onwards *with* the final newline).
+- ✅ **Day 89: Project: `echo` Clone (`-n` flag)**
+    - **Topic:** Simple command-line option parsing. Checking `argv[1]` for a specific flag.
+    - **Exercise:** Modify `myecho`: If the first argument (`argc > 1 && strcmp(argv[1], "-n") == 0`), then print arguments `argv[2]` onwards *without* the final newline. Otherwise, behave as before (print args `argv[1]` onwards *with* the final newline).
 *   **Day 90: Project: `cat` Clone (Single File)**
     *   **Topic:** Combining file I/O (`fopen`, `fgets`/`fgetc`, `fclose`, `perror`) with `argc`/`argv`. Mimic basic `cat filename`.
     *   **Exercise:** Write `mycat` that takes exactly one filename as an argument (`argv[1]`). Check `argc` (should be 2). Open the specified file in read mode (`"r"`). Check if `fopen` succeeded (`perror` on failure). Read the file line by line (using `fgets`) or character by character (using `fgetc`) and print the contents to `stdout`. `fclose` the file.

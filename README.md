@@ -355,11 +355,11 @@ A place to learn the C programming language.
 - ✅ **Day 90: Project: `cat` Clone (Single File)**
     - **Topic:** Combining file I/O (`fopen`, `fgets`/`fgetc`, `fclose`, `perror`) with `argc`/`argv`. Mimic basic `cat filename`.
     - **Exercise:** Write `mycat` that takes exactly one filename as an argument (`argv[1]`). Check `argc` (should be 2). Open the specified file in read mode (`"r"`). Check if `fopen` succeeded (`perror` on failure). Read the file line by line (using `fgets`) or character by character (using `fgetc`) and print the contents to `stdout`. `fclose` the file.
-*   **Day 91: Project: `cat` Clone (Multiple Files / `stdin`)**
-    *   **Topic:** Looping through `argv` for filenames. Handling the case of no arguments (read from standard input, `stdin`).
-    *   **Exercise:** Enhance `mycat`:
-        *   If `argc == 1`, read from `stdin` line by line using `fgets(buffer, size, stdin)` until `NULL`, printing each line.
-        *   If `argc > 1`, loop through `argv` from index 1 to `argc-1`. For each `argv[i]`: open the file, check for error, read/print its content, close it. Handle errors for individual files gracefully (print error to `stderr`, continue to next file).
+- ✅ **Day 91: Project: `cat` Clone (Multiple Files / `stdin`)**
+    - **Topic:** Looping through `argv` for filenames. Handling the case of no arguments (read from standard input, `stdin`).
+    - **Exercise:** Enhance `mycat`:
+        - If `argc == 1`, read from `stdin` line by line using `fgets(buffer, size, stdin)` until `NULL`, printing each line.
+        - If `argc > 1`, loop through `argv` from index 1 to `argc-1`. For each `argv[i]`: open the file, check for error, read/print its content, close it. Handle errors for individual files gracefully (print error to `stderr`, continue to next file).
 *   **Day 92: Splitting Code: `.c` and `.h` Files (Modularity)**
     *   **Topic:** Organizing larger projects. Header files (`.h`) contain declarations (function prototypes, struct definitions, extern variable declarations, macros). Source files (`.c`) contain definitions (function bodies, global variable definitions). Use `#include "myheader.h"` (with quotes for local headers).
     *   **Exercise:** Take a utility function you wrote earlier (e.g., `fahrenheit_to_celsius` or `my_strlen`).

@@ -7,7 +7,7 @@
  * @return Number of characters excluding null terminator
  */
 int mystrlen(const char * inputString, const int max) {
-    int index;
+    int index = 0;
     while (inputString[index] != '\0') {
         index ++;
         if (index == max) {

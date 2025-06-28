@@ -360,9 +360,9 @@ A place to learn the C programming language.
     - **Exercise:** Enhance `mycat`:
         - If `argc == 1`, read from `stdin` line by line using `fgets(buffer, size, stdin)` until `NULL`, printing each line.
         - If `argc > 1`, loop through `argv` from index 1 to `argc-1`. For each `argv[i]`: open the file, check for error, read/print its content, close it. Handle errors for individual files gracefully (print error to `stderr`, continue to next file).
-*   **Day 92: Splitting Code: `.c` and `.h` Files (Modularity)**
-    *   **Topic:** Organizing larger projects. Header files (`.h`) contain declarations (function prototypes, struct definitions, extern variable declarations, macros). Source files (`.c`) contain definitions (function bodies, global variable definitions). Use `#include "myheader.h"` (with quotes for local headers).
-    *   **Exercise:** Take a utility function you wrote earlier (e.g., `fahrenheit_to_celsius` or `my_strlen`).
+- ✅ **Day 92: Splitting Code: `.c` and `.h` Files (Modularity)**
+    - **Topic:** Organizing larger projects. Header files (`.h`) contain declarations (function prototypes, struct definitions, extern variable declarations, macros). Source files (`.c`) contain definitions (function bodies, global variable definitions). Use `#include "myheader.h"` (with quotes for local headers).
+    - **Exercise:** Take a utility function you wrote earlier (e.g., `fahrenheit_to_celsius` or `my_strlen`).
         1.  Put its *declaration* (prototype) in a new file `utils.h`.
         2.  Put its *definition* (the function body) in a new file `utils.c`. Make sure `utils.c` includes `utils.h` if needed (e.g., for struct definitions used in the function).
         3.  In your `main.c` file, `#include "utils.h"` and call the function.

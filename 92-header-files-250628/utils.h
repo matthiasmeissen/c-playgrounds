@@ -1,0 +1,1 @@
+int mystrlen(const char * inputString, const int max);

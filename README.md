@@ -366,11 +366,11 @@ A place to learn the C programming language.
         1.  Put its *declaration* (prototype) in a new file `utils.h`.
         2.  Put its *definition* (the function body) in a new file `utils.c`. Make sure `utils.c` includes `utils.h` if needed (e.g., for struct definitions used in the function).
         3.  In your `main.c` file, `#include "utils.h"` and call the function.
-*   **Day 93: Header Guards**
-    *   **Topic:** Preventing errors if a header file is included multiple times (directly or indirectly). Standard C practice. Two methods:
+- ✅ **Day 93: Header Guards**
+    - **Topic:** Preventing errors if a header file is included multiple times (directly or indirectly). Standard C practice. Two methods:
         1.  `#ifndef MYHEADER_H_ / #define MYHEADER_H_ / ... contents ... / #endif` (Traditional)
         2.  `#pragma once` (Simpler, widely supported, but not standard C)
-    *   **Exercise:** Add header guards (using the `#ifndef` method) to the `utils.h` file created on Day 92.
+    - **Exercise:** Add header guards (using the `#ifndef` method) to the `utils.h` file created on Day 92.
 *   **Day 94: Compiling Multiple Files**
     *   **Topic:** Telling the compiler to combine multiple source files into a single executable. Basic command: `gcc main.c utils.c -o myprogram`. Understand the two stages involved (compilation: `.c` -> `.o` object files; linking: `.o` files + libraries -> executable).
     *   **Exercise:** Compile the program from Day 92/93 using the command `gcc main.c utils.c -o myprogram`. Run `./myprogram`.

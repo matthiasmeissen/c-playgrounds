@@ -9,8 +9,6 @@
  */
 int getCharacterCount(const char * inputString, const int len) {
     int i;
-    for (i = 0; i < len && inputString[i] != '\0'; i++) {
-        printf("%d\n ", i);
-    }
+    for (i = 0; i < len && inputString[i] != '\0'; i++) {}
     return i;
 }

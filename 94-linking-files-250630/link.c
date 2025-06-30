@@ -5,11 +5,11 @@
 // 1. Compilation: .c -> .o (object files)
 // 2. Linking: file + libraries -> executable
 
-// clang main.c utils.c -o main
+// clang link.c utils.c -o link
 
 
 int main(void) {
-    const char myString = "Hello";
+    const char myString[] = "Hello";
     printCharacters(myString, 100);
 
     return 0;

@@ -11,6 +11,7 @@ void printStringDetails(const char * input, const int num) {
     int i = 0;
     while(input[i] != '\0' && i < num) {
         fputc(input[i], stdout);
+        i++;
     }
     fprintf(stdout, ": %d characters\n", i);
 }

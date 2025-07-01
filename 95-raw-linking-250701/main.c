@@ -10,13 +10,13 @@
 
 // Linking
 // This links the binaries .o together and creates the executable
-// You can do this with the -o (output maybe) command
-// clang -o main.o, clang -c utils.o
+// You can do this with the -o (output) command
+// clang main.o utils.o -o myProgram
 
 // To make thinsg faster you can do both in one step (clang main.c utils.c -o main)
 // However for larger projects it could make sense to only compile the files that have changed and then link them
 
-// When you do not need the .o files anymore you can use rm *.o main (The * says it should affect all files with .o extension)
+// When you do not need the .o files anymore you can use rm *.o (The * says it should affect all files with .o extension)
 
 int main(void) {
     const char myString[] = "Hello";

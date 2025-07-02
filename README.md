@@ -377,9 +377,9 @@ A place to learn the C programming language.
 - ✅ **Day 95: Intermediate Compilation & Linking**
     - **Topic:** Performing compilation and linking separately. `gcc -c main.c` (creates `main.o`), `gcc -c utils.c` (creates `utils.o`), `gcc main.o utils.o -o myprogram` (links). Useful for larger projects where only changed files need recompiling.
     - **Exercise:** Compile the program from Day 94 using the separate compilation steps. Check that `.o` files are created. Link them. Run `make clean` (if you have it from Day 99) or `rm *.o myprogram` to clean up.
-*   **Day 96: Introduction to `Makefile` (Basic)**
-    *   **Topic:** Automating the build process. A `Makefile` defines rules (targets, dependencies, commands) for building the program. `make` command reads the `Makefile`.
-    *   **Exercise:** Create a simple `Makefile` for the program from Day 95:
+- ✅ **Day 96: Introduction to `Makefile` (Basic)**
+    - **Topic:** Automating the build process. A `Makefile` defines rules (targets, dependencies, commands) for building the program. `make` command reads the `Makefile`.
+    - **Exercise:** Create a simple `Makefile` for the program from Day 95:
         ```makefile
         # Compiler
         CC=gcc

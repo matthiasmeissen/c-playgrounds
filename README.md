@@ -412,9 +412,9 @@ A place to learn the C programming language.
 - ✅ **Day 97: Bitwise Operators**
     - **Topic:** Operators that work on the individual bits of integer types: `&` (AND), `|` (OR), `^` (XOR), `~` (NOT), `<<` (Left Shift), `>>` (Right Shift). Useful for low-level programming, flags, masks, performance optimization.
     - **Exercise:** Declare `unsigned char flags = 0;` Set the 3rd bit (value 4) using `flags = flags | 4;` (or `flags |= (1 << 2);`). Check if the 3rd bit is set using `if (flags & (1 << 2))`. Print `flags` before and after. Use left shift (`<< 1`) to multiply a number by 2.
-*   **Day 98: Project Work & Consolidation**
-    *   **Topic:** Apply learned concepts to slightly larger problems. Solidify understanding.
-    *   **Exercise:** Choose one:
+- ✅ **Day 98: Project Work & Consolidation**
+    - **Topic:** Apply learned concepts to slightly larger problems. Solidify understanding.
+    - **Exercise:** Choose one:
         1.  **`wc` clone (simplified):** Takes a filename, counts lines, words, and characters. (`fgets` for lines, track newline count. Use `isspace` from `<ctype.h>` to help count words).
         2.  **`grep` clone (simplified):** Takes a search string and a filename. Prints all lines in the file containing the search string (`fgets` to read lines, `strstr` from `<string.h>` to find substring).
         3.  **Improve `cat`:** Add line numbering (`-n` option).

@@ -418,9 +418,9 @@ A place to learn the C programming language.
         1.  **`wc` clone (simplified):** Takes a filename, counts lines, words, and characters. (`fgets` for lines, track newline count. Use `isspace` from `<ctype.h>` to help count words).
         2.  **`grep` clone (simplified):** Takes a search string and a filename. Prints all lines in the file containing the search string (`fgets` to read lines, `strstr` from `<string.h>` to find substring).
         3.  **Improve `cat`:** Add line numbering (`-n` option).
-*   **Day 99: Final Review & C++/Rust Prep Reflection**
-    *   **Topic:** Review challenging areas (pointers!, memory management, file I/O, Makefiles). Reflect on the C learning experience. What did you like? What was difficult? How does manual memory management feel?
-    *   **Exercise:** Revisit exercises from Phase 4 (Pointers/Memory) or Phase 7 (CLI tools). Ensure you understand `malloc`/`free`, pointer arithmetic, and multi-file compilation. Write down key takeaways about C's strengths (control, performance potential, simplicity) and weaknesses (manual memory management risks, potential for errors, verbosity). This reflection will directly inform your choice between C++ (builds on C with abstractions/safety features) and Rust (different approach focused heavily on compile-time safety).
+- ✅ **Day 99: Final Review & C++/Rust Prep Reflection**
+    - **Topic:** Review challenging areas (pointers!, memory management, file I/O, Makefiles). Reflect on the C learning experience. What did you like? What was difficult? How does manual memory management feel?
+    - **Exercise:** Revisit exercises from Phase 4 (Pointers/Memory) or Phase 7 (CLI tools). Ensure you understand `malloc`/`free`, pointer arithmetic, and multi-file compilation. Write down key takeaways about C's strengths (control, performance potential, simplicity) and weaknesses (manual memory management risks, potential for errors, verbosity). This reflection will directly inform your choice between C++ (builds on C with abstractions/safety features) and Rust (different approach focused heavily on compile-time safety).
 
 ---
 
